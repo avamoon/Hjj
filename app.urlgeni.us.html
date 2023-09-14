@@ -1,0 +1,1977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-ccdf5663d566959b844","applicationID":"559993124","transactionName":"IQ1cFxBcCFtVREkSEAMWWwBNUAtaQFkVBBY=","queueTime":0,"applicationTime":300,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"601371997",accountID:"3479697",trustKey:"3479697",xpid:"VwIAWFBaDxAFUVhbDgIGVFA=",licenseKey:"NRJS-ccdf5663d566959b844",applicationID:"559993124"};;/*! For license information please see nr-loader-spa-1.239.1.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,r={5763:(e,t,r)=>{r.d(t,{P_:()=>h,Mt:()=>g,C5:()=>s,DL:()=>b,OP:()=>_,lF:()=>D,Yu:()=>w,Dg:()=>p,CX:()=>c,GE:()=>y,sU:()=>S});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,n.Qy)(e,a[e],"info")}var u=r(7056);const d=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:u.oD,inactiveMs:u.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},l={},f="All configuration objects require an agent identifier!";function h(e){if(!e)throw new Error(f);if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function p(e,t){if(!e)throw new Error(f);l[e]=(0,i.D)(t,d()),(0,n.Qy)(e,l[e],"config")}function g(e,t){if(!e)throw new Error(f);var r=h(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const m={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function b(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!v[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return v[e]}function y(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=(0,i.D)(t,m),(0,n.Qy)(e,v[e],"loader_config")}const w=(0,n.mF)().o;var A=r(385),x=r(6818);const E={buildEnv:x.Re,customTransaction:void 0,disabled:!1,distMethod:x.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(A._A?.performance?.timeOrigin||A._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+A._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof A._A.XMLHttpRequest?.prototype?.addEventListener,version:x.q4,denyList:void 0},T={};function _(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!T[e])throw new Error("Runtime for ".concat(e," was never set"));return T[e]}function S(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");T[e]=(0,i.D)(t,E),(0,n.Qy)(e,T[e],"runtime")}function D(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.239.1",i="PROD",o="CDN"},385:(e,t,r)=>{r.d(t,{FN:()=>a,IF:()=>u,Nk:()=>l,Tt:()=>s,_A:()=>o,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>d});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=""+o?.location,s=/iPad|iPhone|iPod/.test(navigator.userAgent),c=s&&"undefined"==typeof SharedWorker,u=(()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),d=Boolean(n&&window.document.documentMode),l=!!navigator.sendBeacon},1117:(e,t,r)=>{r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=[...s[e]];function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),a(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(5763);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++r).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(r,++i).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{r.d(t,{Bq:()=>n,Hb:()=>o,oD:()=>i});const n="NRBA",i=144e5,o=18e5},7894:(e,t,r)=>{function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{r.d(t,{e:()=>o});var n=r(385),i={};function o(e){if(e in i)return i[e];if(0===(e||"").indexOf("data:"))return{protocol:"data"};let t;var r=n._A?.location,o={};if(n.il)t=document.createElement("a"),t.href=e;else try{t=new URL(e,r.href)}catch(e){return o}o.port=t.port;var a=t.href.split("://");!o.port&&a[1]&&(o.port=a[1].split("")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===a[0]?"443":"80"),o.hostname=t.hostname||r.hostname,o.pathname=t.pathname,o.protocol=a[0],""!==o.pathname.charAt(0)&&(o.pathname=""+o.pathname);var s=!t.protocol||":"===t.protocol||t.protocol===r.protocol,c=t.hostname===r.hostname&&t.port===r.port;return o.sameOrigin=s&&(!t.hostname||c),""===o.pathname&&(i[e]=o),o}},50:(e,t,r)=>{function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2587:(e,t,r)=>{r.d(t,{N:()=>c,T:()=>u});var n=r(8325),i=r(5546),o=r(3325);const a={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},s=new Set;function c(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,n]=e;a[t]?a[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),u[t]=Boolean(n)})),Object.keys(a).forEach((e=>{void 0===u[e]&&(a[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),u[e]=!1)})),s.add(t))}const u={}},2210:(e,t,r)=>{r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{r.d(t,{K:()=>a,b:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{r.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{r.d(t,{em:()=>b,u5:()=>D,QU:()=>N,_L:()=>I,Gm:()=>z,Lg:()=>L,BV:()=>G,Kf:()=>K});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&e instanceof Function&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var w="fetch-",A=w+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,T=f._A.Response,_="prototype";const S={};function D(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&T&&f._A.fetch))return t;if(S[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return S[t.debugId]=1,x.forEach((e=>{r(E[_],e,A),r(T[_],e,A)})),r(f._A,"fetch",w),t.on(w+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(w+"done",[null,r],n)}else t.emit(w+"done",[e],n)})),t}const j={},C=["pushState","replaceState"];function N(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||j[t.debugId]++||(j[t.debugId]=1,c(t).inPlace(window.history,C,"-")),t}var O=r(3239);const P={},R=["appendChild","insertBefore","replaceChild"];function I(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||P[t.debugId])return t;P[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,R,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,O.m$)(!1)),e.addEventListener("error",f,(0,O.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function z(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const H={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(H[t.debugId])return t;H[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const M={},B="setTimeout",F="setInterval",U="clearTimeout",Z="-start",V="-",q=[B,"setImmediate",F,U,"clearImmediate"];function G(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(M[t.debugId]++)return t;M[t.debugId]=1;var r=c(t);return r.inPlace(f._A,q.slice(0,2),B+V),r.inPlace(f._A,q.slice(2,3),F+V),r.inPlace(f._A,q.slice(3),U+V),t.on(F+Z,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(B+Z,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},Q=["open","send"];function K(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",A)}),(0,O.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",A)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,Q,"-xhr-",A),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(w):u?u(w):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(w).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||w()}));function w(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function A(e,t){return t}return r}},7825:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{r.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>n});const n=r(3325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},9251:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},3614:(e,t,r)=>{r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>A,FEATURE_NAME:()=>i,FETCH:()=>_,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>T,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>w,originalSetTimeout:()=>y});var n=r(5763);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,w="-start",A="-end",x="-body",E="cb"+A,T="jsTime",_="fetch"},5938:(e,t,r)=>{r.d(t,{W:()=>o});var n=r(5763),i=r(8325);class o{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,n.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=r,this.blocked=!1}}},9144:(e,t,r)=>{r.d(t,{j:()=>m});var n=r(3325),i=r(5763),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);function p(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var g=r(2587);function m(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},m=arguments.length>2?arguments[2]:void 0,v=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:A={loaderType:m},exposed:x=!0}=t;const E=(0,h.gG)();y||(b=E.init,y=E.info,w=E.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),y.jsAttributes??={},d.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y);const T=(0,i.P_)(e);A.denyList=[...T.ajax?.deny_list||[],...T.ajax?.block_internal?[y.beacon,y.errorBeacon]:[]],(0,i.sU)(e,A),p();const _=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),g=p.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),A(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>{h[e]=A(m,e,!0,"api")})),h.addPageAction=A(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=A(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return""!==t.charAt(0)&&(t=""+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=Object.values(n.D);if(void 0===e)e=t;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!t.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(t));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(g.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw g.emit("fn-err",[arguments,this,e],r),e}finally{g.emit("fn-end",[(0,s.z)()],r)}}}};function A(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function x(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b)((()=>x()),!0):x(),h}(e,v);return(0,h.Qy)(e,_,"api"),(0,h.Qy)(e,x,"exposed"),(0,h.EZ)("activatedFeatures",g.T),_}},3325:(e,t,r)=>{r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-spa.142f942f-1.239.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.239.1.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var f=(t,n)=>{s.onerror=s.onload=null,clearTimeout(h);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},h=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.239.1.PROD"]=self["webpackChunk:NRBA-1.239.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{var e=i(50);class t{addPageAction(t,r){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,r){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,r,n){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,r){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,r){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var r=i(3325),n=i(5763);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(9144);var c=i(5546),u=i(385),d=i(8e3),l=i(5938),f=i(3960);class h extends l.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,d.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,d.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=u.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,3228));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,d.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),o(!1)}};u.il?(0,f.b)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var p=i(7633),g=i(7894);class m extends h{static featureName=p.t9;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||u.Tt)&&"undefined"!=typeof PerformanceTiming){const t=(0,n.OP)(e);t[p.Dz]=Math.max(Date.now()-t.offset,0),(0,f.K)((()=>{t[p.qw]=Math.max((0,g.z)()-t[p.Dz],0)})),(0,f.b)((()=>{const e=(0,g.z)();t[p.OJ]=Math.max(e-t[p.Dz],0),(0,c.p)("timing",["load",e],void 0,r.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var v=i(1117),b=i(1284);class y extends v.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,b.D)(e,(function(e,r){t[e]=w(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,b.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=w(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=w(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=x(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function x(e){return"object"!=typeof e?[]:(0,b.D)(e,E)}function E(e,t){return t}var T=i(8632),_=i(4402),S=i(4351);var D=i(7956),j=i(3239),C=i(9251);class N extends h{static featureName=C.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t,r),u.il&&((0,n.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,D.N)((()=>(0,c.p)("docHidden",[(0,g.z)()],void 0,C.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,c.p)("winPagehide",[(0,g.z)()],void 0,C.t,this.ee))),this.importAggregator())}}var O=i(3081);class P extends h{static featureName=O.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,O.t9,r),this.importAggregator()}}var R=i(6660);class I{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends h{static featureName=R.t;#e=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#e.has(n)&&(this.#e.add(n),(0,c.p)("err",[this.#t(n),(0,g.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,c.p)("ierr",[this.#t(e),(0,g.z)(),!0],void 0,r.D.jserrors,this.ee)})),u._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,c.p)("err",[this.#r(e),(0,g.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,j.m$)(!1,this.removeOnAbort?.signal)),u._A.addEventListener("error",(e=>{this.abortHandler&&(this.#e.has(e.error)?this.#e.delete(e.error):(0,c.p)("err",[this.#n(e),(0,g.z)()],void 0,r.D.jserrors,this.ee))}),(0,j.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.#e.clear(),this.abortHandler=void 0}#t(e){return e instanceof Error?e:void 0!==e?.message?new I(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new I("string"==typeof e?e:(0,S.P)(e))}#r(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new I(t);const r=this.#t(e.reason);return r.message=t+r.message,r}#n(e){return e.error instanceof Error?e.error:new I(e.message,e.filename,e.lineno,e.colno)}}var z=i(2210);let H=1;const L="nr@id";function M(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===u._A?0:(0,z.X)(e,L,(function(){return H++}))}function B(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,S.P)(e).length}catch(e){return}}}var F=i(1214),U=i(7243);class Z{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,_.M)(),s=(0,_.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof u._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,S.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var V=i(7825),q=["load","error","abort","timeout"],G=q.length,W=n.Yu.REQ,X=n.Yu.XHR;class Q extends h{static featureName=V.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,V.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new Z(e),this.handler=(e,t,r,n)=>(0,c.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};u._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};K(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,F.u5)(this.ee),(0,F.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=E,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){T(t,e)}),(0,j.m$)(!1)),u.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,j.m$)(!1))}function s(e){this.params={method:e[0]},K(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function d(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=B(i);a&&(n.txSize=a)}this.startTime=(0,g.z)(),this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<G;s++)r.addEventListener(q[s],this.listener,(0,j.m$)(!1))}function l(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+M(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+M(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,g.z)()}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function v(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function b(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,g.z)()))}function y(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,g.z)()-this.xhrCbStart,this.onload,r],r)}function w(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&u.il&&(t=""+u._A.location.href):e[0]&&e[0].url?t=e[0].url:u._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function A(e,t){this.params={},this.metrics={},this.startTime=(0,g.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:u._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),K(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.txSize=B(n.body)||0}function x(e,t){var n;this.endTime=(0,g.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,g.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function E(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<G;o++)e.removeEventListener(q[o],this.listener,!1);t.aborted||(n.duration=(0,g.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):T(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function T(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?B(e.response):"text"===r||""===r||void 0===r?B(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",d),t.on("xhr-cb-time",l),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",m),t.on("removeEventListener-end",v),t.on("fn-end",y),t.on("fetch-before-start",w),t.on("fetch-start",A),t.on("fn-start",b),t.on("fetch-done",x)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function K(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var Y=i(3614);const{BST_RESOURCE:J,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=Y;var se=i(7836);const{FEATURE_NAME:ce,START:ue,END:de,BODY:le,CB_END:fe,JS_TIME:he,FETCH:pe,FN_START:ge,CB_START:me,FN_END:ve}=se;var be=i(4649);class ye extends h{static featureName=be.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,be.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,_.ky)(16);super(),u._A?(this.agentIdentifier=r,this.sharedAggregator=new y({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(m),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){const t="features";try{const n=a(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>n[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,S.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,T.Qy)(this.agentIdentifier,this.features,t)}catch(r){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",r);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,T.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[Q,m,N,class extends h{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!u.il)return;const n=this.ee;let i;(0,F.QU)(n),this.eventsEE=(0,F.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,g.z)()})),this.eventsEE.on(ie,(function(e,t){(0,c.p)("bst",[e[0],t,this.bstStart,(0,g.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,g.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,c.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,c.p)(J,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},P,ye,k,class extends h{static featureName=ce;constructor(e,t){if(super(e,t,ce,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!u.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,F._L)(this.ee),s=(0,F.Lg)(this.ee),c=(0,F.BV)(this.ee),d=(0,F.Kf)(this.ee),l=this.ee.get("events"),f=(0,F.u5)(this.ee),h=(0,F.QU)(this.ee),p=(0,F.Gm)(this.ee);function m(e,t){h.emit("newURL",[""+window.location,t])}function v(){i++,r=window.location.hash,this[ge]=(0,g.z)()}function b(){i--,window.location.hash!==r&&m(0,!0);var e=(0,g.z)();this[he]=~~this[he]+e-this[ge],this[ve]=e}function y(e,t){e.on(t,(function(){this[t]=(0,g.z)()}))}this.ee.on(ge,v),s.on(me,v),a.on(me,v),this.ee.on(ve,b),s.on(fe,b),a.on(fe,b),this.ee.buffer([ge,ve,"xhr-resolved"],this.featureName),l.buffer([ge],this.featureName),c.buffer(["setTimeout"+de,"clearTimeout"+ue,ge],this.featureName),d.buffer([ge,"new-xhr","send-xhr"+ue],this.featureName),f.buffer([pe+ue,pe+"-done",pe+le+ue,pe+le+de],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([ge],this.featureName),s.buffer(["propagate",me,fe,"executor-err","resolve"+ue],this.featureName),o.buffer([ge,"no-"+ge],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),y(f,pe+ue),y(f,pe+"-done"),y(a,"new-jsonp"),y(a,"jsonp-end"),y(a,"cb-start"),h.on("pushState-end",m),h.on("replaceState-end",m),window.addEventListener("hashchange",m,(0,j.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",m,(0,j.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){m(0,i>1)}),(0,j.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+    <link rel="shortcut-icon" type="image/x-icon"  href="assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Mobile App URLs for Amazon Instagram YouTube TikTok Facebook</title>
+
+    <meta name="description" content="Make app deep link URLs for Amazon, Instagram, YouTube, Facebook, TikTok, Apple App Store, Google Play Store ">
+    <meta name="keywords" content="">
+     <meta name="system" content="{&quot;protocol&quot;:null,&quot;domain&quot;:null,&quot;system&quot;:&quot;production&quot;,&quot;code_effective_at&quot;:&quot;2023-09-14T21:42:11+00:00&quot;,&quot;stripe_publishable_key&quot;:&quot;pk_live_yCQXAf1l304nvxHoIKpxpQcf&quot;}" />
+
+    <meta property="og:type" content="Site">
+    <meta property="og:title" content="App Linking for Marketers">
+    <meta property="og:description" content="Create deep links and QR codes for any app - no SDK required ">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://app.urlgeni.us">
+
+    <meta property="twitter:url" content="https://app.urlgeni.us">
+    <meta property="twitter:description" content="Create deep links and QR codes for any app - no SDK required ">
+    <meta property="twitter:image" content="logo.png">
+
+    <meta property="rss:url" content="feed/">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed for the URLgenius Blog" href=feed/
+
+    <meta name="norton-safeweb-site-verification" content="0j6oj5-vqkfd58f3aczsnajjzqwgpk0fwft7lpzv96798i3vdvvhs0g661vjodi0uiarv-yexb79y7wdiwhu-1ld7cwdxy10l3cef72fkwskrqsc7frzs5si1d3o7zch" />
+
+    <link rel="preconnect" href="https://s3.amazonaws.com">
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <link rel="stylesheet" media="all" href="packs/css/application-cd805cf0.css" />
+
+    <link href="packs/media/webfonts/fa-regular-400-c20b5b73.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="packs/media/webfonts/fa-solid-900-b15db15f.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="packs/media/fonts/slick-b7c9e1e4.woff" rel="preload" as="font" type="font/woff" crossorigin="anonymous">
+
+    <link href="packs/media/fonts/roboto-v20-latin-300-ef7c6637c68f269a882e73bcb57a7f6a.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="packs/media/fonts/roboto-v20-latin-500-020c97dc8e0463259c2f9df929bb0c69.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="packs/media/fonts/roboto-v20-latin-700-2735a3a69b509faf3577afd25bdf552e.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="packs/media/fonts/roboto-v20-latin-italic-51521a2a8da71e50d871ac6fd2187e87.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="packs/media/fonts/roboto-v20-latin-regular-479970ffb74f2117317f9d24d9e317fe.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link href="assets/urlg-logo-44148390be074ce3af15ad6025bbda27d97874f306d66a86d7bcbf8d43ba84cc.png" rel="preload" as="image" type="image/png">
+
+    <style>
+      #composer-section {
+        min-height: 320px;
+      }
+
+      .popular-apps {
+        min-height: 101px;
+      }
+    </style>
+
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Y0CR4j7i26CEfVl0wz2AX/NlqHazt3MuFIOUz98dEXGiwE+YxkGgRkgsb9j8zFJHge1Esoo5OCoIU5ClT61pRg==" />
+
+  </head>
+
+  <body class="static composer">
+    <div id="current_company" data="null"></div>
+    <div id="feature_flags" data="{&quot;helpForm&quot;:true,&quot;geoLangChart&quot;:true}"></div>
+
+    <div class="content">
+      <nav class="nav ">
+  <div class="nav__content">
+    <a class="nav__logo" href="">
+      <img
+        src="assets/urlg-logo-white-ff41c6f2d23570274725dc40bcd77d5b23a0cc93e426f18722bb31f1d1ccda77.svg"
+        alt="Mobile App Deep Linking for Omnichannel Marketers"
+        width="150"
+        height="37"
+      />
+    </a>
+
+    <div class="nav__links">
+      <div class="nav__link">
+        Solutions
+        <div class="nav__dropdown solutions">
+          <div class="nav__dropdown__content">
+            <ul>
+              <li>
+                <a href="app-linking">
+                  <p>App Linking</p>
+                  <span>Instantly create deep links for any app</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="deferred-deep-linking">
+                  <p>Deferred Deep Linking</p>
+                  <span>Increase installs and re-engagement</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="qr-codes">
+                  <p>QR Codes</p>
+                  <span>Create web and app deep linking QR codes</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="app-banners">
+                  <p>Smart App Banners</p>
+                  <span>Increase organic app installs</span>
+                </a>
+              </li>
+
+              <hr class="my-4" />
+
+              <li>
+                <a href="marketplace-sellers">
+                  <p>Marketplace Sellers</p>
+                  <span>Increase social media revenue</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="influencers-affiliates">
+                  <p>Influencers & Affiliates</p>
+                  <span>Increase commissions</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav__link">
+        <a href="pricing">Pricing</a>
+      </div>
+
+      <div class="nav__link">
+        Resources
+        <div class="nav__dropdown resources">
+          <div class="nav__dropdown__content">
+            <ul>
+              <li>
+                <a href="blog">
+                  <p>Best Practices & Case Studies</p>
+                  <span>Insights and real world cases</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="qr-strategy-guide">
+                  <p>QR Strategy Guide</p>
+                  <span>Download your free copy today!</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="qr-experience-playbook">
+                  <p>QR Experience Playbook</p>
+                  <span>Download your free copy today!</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="surveillance-marketing-app-research">
+                  <p>CMO Paper on Surveillance Marketing</p>
+                  <span>Download your free copy today!</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+        <div id="request-demo-button"></div>
+    </div>
+
+
+    <div class="nav__menu">
+      <div id="trial-meter-section"></div>
+      <div id="plan-countdown-section"></div>
+
+        <div class="nav__ctas">
+          <a title="Sign up for a URLgenius dashboard to create, manage, and view your deeplink stats." class="btn btn--white" href="signup">Get Started for Free</a>
+          <a title="Sign into your URLgenius dashboard to manage deeplinks, view stats, and create new deeplinks." class="btn btn--outline--white" href="signin">Login</a>
+        </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="nav-mobile ">
+  <a href="">
+    <img
+      src="assets/urlg-logo-white-ff41c6f2d23570274725dc40bcd77d5b23a0cc93e426f18722bb31f1d1ccda77.svg"
+      alt="Mobile App Deep Linking for Omnichannel Marketers"
+      width="137.25"
+      height="30"
+    />
+  </a>
+
+  <div class="nav__ham">
+    <ion-icon name="menu"></ion-icon>
+  </div>
+</div>
+
+<div class="nav-mobile-overlay"></div>
+
+<div class="nav-mobile-menu">
+  <div class="nav-mobile-menu__content">
+    <div class="header">
+      <img
+        src="assets/urlg-logo-black-0aa3f1050d50c2e510f39e48205332ea20844fb86a8f6f212e1c7b46b98f4ad2.svg"
+        alt="Mobile App Deep Linking for Omnichannel Marketers"
+        width="100"
+        height="25"
+      />
+
+      <ion-icon name="close" class="nav-mobile__close"></ion-icon>
+    </div>
+
+
+
+    <ul class="marketing-list">
+      <li>
+        <div class="accordion-trigger">
+          Solutions
+          <ion-icon name="arrow-dropdown"></ion-icon>
+        </div>
+
+        <div class="accordion-content">
+          <ul>
+            <li><a href="app-linking">App Linking</a></li>
+            <li><a href="deferred-deep-linking">Deferred Deep Linking</a></li>
+            <li><a href="qr-codes">QR Codes</a></li>
+            <li><a href="app-banners">Smart App Banners</a></li>
+            <li><a href="marketplace-sellers">Marketplace Sellers</a></li>
+            <li><a href="influencers-affiliates">Influencers & Affiliates</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="accordion-trigger">
+          Resources
+          <ion-icon name="arrow-dropdown"></ion-icon>
+        </div>
+
+        <div class="accordion-content">
+          <ul>
+            <li><a href="blog">Best Practices</a></li>
+            <li>
+              <a href="qr-strategy-guide">
+                QR Strategy Guide
+              </a>
+            </li>
+            <li>
+              <a href="qr-experience-playbook">
+                QR Experience Playbook
+              </a>
+            </li>
+            <li>
+              <a href="surveillance-marketing-app-research">
+                CMO Paper on Surveillance Marketing
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="pricing">Pricing</a>
+      </li>
+    </ul>
+      <div id="request-demo-button-mobile"></div>
+
+      <div class="ctas">
+        <a title="Sign up for a URLgenius dashboard to create, manage, and view your deeplink stats." class="btn btn--squared" href="signup">Get Started for Free</a>
+        <a title="Sign into your URLgenius dashboard to manage deeplinks, view stats, and create new deeplinks." class="btn btn--outline--gray btn--squared" href="signin">Login</a>
+      </div>
+  </div>
+</div>
+
+<script>
+  let ham = document.querySelector('.nav__ham');
+  let menu = document.querySelector('.nav-mobile-menu');
+  let overlay = document.querySelector('.nav-mobile-overlay');
+  let close = document.querySelector('.nav-mobile__close');
+  let triggers = document.querySelectorAll('.accordion-trigger');
+  let demoBtn = document.getElementById('request-demo-button-mobile')
+
+  triggers.forEach(elem => {
+    elem.addEventListener('click', (e) => {
+      e.target.classList.toggle('show');
+    }, false);
+  });
+
+  close.addEventListener('click', hide, false);
+  if(demoBtn != null){
+    demoBtn.addEventListener('click', hide, false);
+  }
+  ham.addEventListener('click', show, false);
+  menu.addEventListener('transitionend', hideNoScrollOnResize, false);
+
+  function hideNoScrollOnResize(event) {
+    let target = event.target;
+    let styles = window.getComputedStyle(target);
+    let opacity = Number(styles['opacity']);
+    let hasShow = target.classList.contains('show');
+
+    document.body.classList.toggle('no-scroll', hasShow && opacity === 1);
+  }
+
+  function hide() {
+    document.body.classList.remove('no-scroll');
+    menu.classList.remove('show');
+    overlay.classList.remove('show');
+  }
+
+  function show() {
+    document.body.classList.add('no-scroll');
+    menu.classList.add('show');
+    overlay.classList.add('show');
+  }
+</script>
+
+
+      
+
+
+
+      <div id="current_user">
+</div>
+
+
+
+
+
+
+
+
+
+<div class="flex flex-col">
+
+  <section id="composer-container">
+    <div id="top-bg-tall" class="top-header-section">
+      <div class="inner-div"></div>
+    </div>
+
+    <div id="header-content">
+      <div class="text-white text-center mb-10 relative z-10">
+        <div class="px-4">
+          <h1 class="pb-1 text-3xl md:text-375xl font-light">App Linking for Marketers</h1>
+              <h3 class="subheadings"> Grow mobile conversions, sales, and installs by 200% or more </h3>
+              <h3 class="subheadings hidden"> Create deep links and QR codes for any app - no SDK required </h3>
+        </div>
+
+        <div id="composer-section"></div>
+      </div>
+    </div>
+  </section>
+
+  <div>
+    <section id="customers" class="pb-16">
+    <div id="quotes-slider" data="[{&quot;id&quot;:20,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Paid Social Director, Global Brand&quot;,&quot;quote&quot;:&quot;URLgenius exceeded our expectations, delivering between 250% - 450% increased conversion. The platform is now a key part of our strategy. &quot;,&quot;created_at&quot;:&quot;2020-10-02T21:02:46.619Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:34:45.859Z&quot;},{&quot;id&quot;:14,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Facebook Marketer, Manychat User&quot;,&quot;quote&quot;:&quot;I needed a clean way of deep linking my Facebook group to my clients from inside Manychat. URLgenius worked beautifully! &quot;,&quot;created_at&quot;:&quot;2020-10-02T20:17:13.904Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:37:15.267Z&quot;},{&quot;id&quot;:4,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Social Media Manager&quot;,&quot;quote&quot;:&quot;Thank you for a great product! URLgenius makes my work SO much easier and more productive. &quot;,&quot;created_at&quot;:&quot;2020-09-28T16:52:29.938Z&quot;,&quot;updated_at&quot;:&quot;2020-10-02T20:24:40.766Z&quot;},{&quot;id&quot;:7,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- YouTube Marketer&quot;,&quot;quote&quot;:&quot;I love URLgenius! It makes it SO much easier for my FOLLOWERS to become SUBSCRIBERS!&quot;,&quot;created_at&quot;:&quot;2020-09-28T17:10:57.932Z&quot;,&quot;updated_at&quot;:&quot;2020-10-02T20:25:17.468Z&quot;},{&quot;id&quot;:1,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Amazon Marketer, Agency CEO &quot;,&quot;quote&quot;:&quot;URLgenius has helped 2x our Amazon conversion - it makes the customer journey easier, and provides experiences that produce more sales. &quot;,&quot;created_at&quot;:&quot;2020-09-28T16:40:36.610Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:19:39.562Z&quot;},{&quot;id&quot;:26,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Social Marketing Strategist&quot;,&quot;quote&quot;:&quot;You can use URLgenius to create deep links into Messenger, Telegram profiles; Snapchat profiles, and more…&quot;,&quot;created_at&quot;:&quot;2020-10-03T13:48:54.956Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:48:54.956Z&quot;},{&quot;id&quot;:6,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Social Media Director, Cosmetics Brand&quot;,&quot;quote&quot;:&quot;It&#39;s so GREAT being able to link directly to Instagram accounts - without the weird in-app browser experience!&quot;,&quot;created_at&quot;:&quot;2020-09-28T17:08:40.661Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:20:33.088Z&quot;},{&quot;id&quot;:8,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Software Engineer, Social Marketer &quot;,&quot;quote&quot;:&quot;Gotta say, URLgenius: your team honestly has some of the BEST customer service ever!&quot;,&quot;created_at&quot;:&quot;2020-09-28T17:11:45.135Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:20:56.715Z&quot;},{&quot;id&quot;:5,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- YouTube Marketer&quot;,&quot;quote&quot;:&quot;I get subscribers, likes and comments faster. I recommend URLgenius to all my friends!&quot;,&quot;created_at&quot;:&quot;2020-09-28T17:05:33.415Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:18:54.162Z&quot;},{&quot;id&quot;:12,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Record Label, Social Marketer &quot;,&quot;quote&quot;:&quot;URLgenius helped us gain 16% more YouTube subscribers on a monthly basis - delivering MORE streams and engagement for our Artists.&quot;,&quot;created_at&quot;:&quot;2020-10-02T20:06:50.401Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:22:40.992Z&quot;},{&quot;id&quot;:23,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Social Marketing Strategist&quot;,&quot;quote&quot;:&quot;You can use URLgenius to create deep links into Facebook profiles, groups, reviews, events, and more...&quot;,&quot;created_at&quot;:&quot;2020-10-03T13:48:11.438Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:48:11.438Z&quot;},{&quot;id&quot;:19,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Social Media Director, Fashion Brand &quot;,&quot;quote&quot;:&quot;Our digital team is very pleased with URLgenius and the KPIs obtained - including 35% higher follower conversion rates on large scale campaigns. &quot;,&quot;created_at&quot;:&quot;2020-10-02T21:01:10.474Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:23:13.182Z&quot;},{&quot;id&quot;:22,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Email Marketer&quot;,&quot;quote&quot;:&quot;We love URLgenius and have rolled out the platform as a permanent part of our email marketing strategy.&quot;,&quot;created_at&quot;:&quot;2020-10-03T13:36:34.233Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:23:41.594Z&quot;},{&quot;id&quot;:16,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Social Marketing Strategist&quot;,&quot;quote&quot;:&quot;Social pro tip: Use URLgenius to create links that open the native app on a user&#39;s device ... NOT in a mobile browser logged out! &quot;,&quot;created_at&quot;:&quot;2020-10-02T20:53:14.997Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:42:00.677Z&quot;},{&quot;id&quot;:24,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Social Marketing Strategist&quot;,&quot;quote&quot;:&quot;You can use URLgenius to create deep links into Instagram profiles, pictures, hashtags, IGTV, and more…&quot;,&quot;created_at&quot;:&quot;2020-10-03T13:48:28.113Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:48:28.113Z&quot;},{&quot;id&quot;:3,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Graphic Designer&quot;,&quot;quote&quot;:&quot;The URLgenius platform is amazing - I&#39;m a customer for life! Thank you so much!!&quot;,&quot;created_at&quot;:&quot;2020-09-28T16:48:47.734Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:09:50.028Z&quot;},{&quot;id&quot;:25,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Social Marketing Strategist&quot;,&quot;quote&quot;:&quot;You can use URLgenius to create deep links into YouTube profiles, channels, videos, and more…&quot;,&quot;created_at&quot;:&quot;2020-10-03T13:48:43.651Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:48:43.651Z&quot;},{&quot;id&quot;:9,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- YouTube Marketer&quot;,&quot;quote&quot;:&quot;URLgenius: you&#39;ve been such a big help to me and other people too! Keep up the good work!&quot;,&quot;created_at&quot;:&quot;2020-10-01T18:52:41.935Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:19:06.267Z&quot;},{&quot;id&quot;:15,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Designer, Social Media Consultant&quot;,&quot;quote&quot;:&quot;It opens in the Canva app!!! OMG!! This is so amazing!! I&#39;m a customer for life! Thank you!!&quot;,&quot;created_at&quot;:&quot;2020-10-02T20:23:45.665Z&quot;,&quot;updated_at&quot;:&quot;2020-10-02T20:36:45.177Z&quot;},{&quot;id&quot;:18,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Email Marketer, Snapchat Marketer&quot;,&quot;quote&quot;:&quot;We deployed URLgenius links in our email campaign and results were immediate - thousands more Snapchat followers in our first use! &quot;,&quot;created_at&quot;:&quot;2020-10-02T20:59:38.969Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:54:08.782Z&quot;},{&quot;id&quot;:13,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Musician, Social Media Marketer &quot;,&quot;quote&quot;:&quot;I’m extremely happy with my URLgenius results! My conversion rate has gone from 40% to 65% when linking from Instagram into Spotify. &quot;,&quot;created_at&quot;:&quot;2020-10-02T20:11:28.428Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:55:26.165Z&quot;},{&quot;id&quot;:11,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- App Marketer, Social Media Director&quot;,&quot;quote&quot;:&quot;URLgenius lets us deeplink users from social media into our app - resulting in more opportunities for purchases, retention, and engagement.&quot;,&quot;created_at&quot;:&quot;2020-10-02T20:01:13.533Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:57:39.259Z&quot;},{&quot;id&quot;:10,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- App Developer, Amazon Marketer&quot;,&quot;quote&quot;:&quot;Without URLgenius, we&#39;d have to detect a user&#39;s OS, prepend intent schemes, and handle situations where the Amazon app isn&#39;t installed.&quot;,&quot;created_at&quot;:&quot;2020-10-02T19:56:05.664Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T13:59:02.312Z&quot;},{&quot;id&quot;:2,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Content Creator, YouTube Marketer&quot;,&quot;quote&quot;:&quot;After only two days, I&#39;m MORE than convinced on the value of URLgenius. Thank you!&quot;,&quot;created_at&quot;:&quot;2020-09-28T16:46:06.321Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:11:37.401Z&quot;},{&quot;id&quot;:21,&quot;state&quot;:&quot;active&quot;,&quot;submitter&quot;:&quot;- Chatbot Marketer, Strategist &quot;,&quot;quote&quot;:&quot;As a bot builder, if I want to send someone into an app, I use URLgenius. It&#39;s so easy ... I don&#39;t have to do anything. It&#39;s kind of ridiculous!&quot;,&quot;created_at&quot;:&quot;2020-10-02T21:20:45.860Z&quot;,&quot;updated_at&quot;:&quot;2020-10-03T14:13:51.497Z&quot;}]"></div>
+  <div class="content-container mt-0 mb-3 md:mb-12">
+    <div class="py-6 md:text-center">
+      <h2 class="mb-4">You’re in Good Company</h2>
+      <h5>Increasing mobile results for thousands of marketers and agencies around the world</h5>
+    </div>
+  </div>
+
+  <div class="brand-marquee">
+    <div class="brand-marquee__img"></div>
+  </div>
+</section>
+
+    <section id="features" class="bg-grayLight pt-12 pb-1 md:pt-24 md:pb-12">
+  <div class="content-container mt-0">
+    <div class="py-6 text-center">
+      <h2 class="mb-4">Cloud-based App Deep Linking</h2>
+      <h5>What Makes URLgenius different?</h5>
+    </div>
+
+    <div class='flex flex-wrap md:py-12'>
+      <div class='w-full md:w-1/3 flex flex-col items-center mb-12 md:mb-0 px-4'>
+        <div class='oval-copy'>
+          <ion-icon name='cube'></ion-icon>
+        </div>
+
+        <h4 class="mt-10 mb-4">Instant Deployment</h4>
+
+        <div class="text-center">
+          <p>Compose links for social apps, brand apps or even your own app. Instantly deploy across marketing channels. Growing support for billions of in-app destinations worldwide.</p>
+        </div>
+      </div>
+
+      <div class='w-full md:w-1/3 flex flex-col items-center mb-12 md:mb-0 px-4'>
+        <div class='oval-copy'>
+          <ion-icon name='cloud-outline'></ion-icon>
+        </div>
+
+        <h4 class="mt-10 mb-4">No SDK Required</h4>
+
+        <div class="text-center">
+          <p>Marketers simply update campaign URLs to link into apps vs. websites while controlling the fallback destination. Non-PII compliant no building or tracking device profiles.</p>
+          <a class="btn btn--small btn--squared btn--outline mt-6" href="app-linking">How it Works</a>
+        </div>
+      </div>
+
+      <div class='w-full md:w-1/3 flex flex-col items-center px-4'>
+        <div class='oval-copy'>
+          <ion-icon name='browsers'></ion-icon>
+        </div>
+
+        <h4 class="mt-10 mb-4">Any Budget</h4>
+
+        <div class="text-center">
+          <p>Choose from pay-as-you-go or fixed fee pricing designed to fit any campaign or budget. Get 500 free test clicks to prove you can increase your marketing ROI.</p>
+          <a class="btn btn--small btn--squared btn--outline mt-6" href="pricing">See Pricing</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section id="case-studies" class="content-container">
+  <div class="py-6 text-center">
+    <h2 class="mb-4">App Deep Linking Strategies and Case Studies</h2>
+    <h5>Learn how these brands and agencies are achieving campaign goals faster and easier.</h5>
+  </div>
+
+  <div id="case-study-section"></div>
+</section>
+
+
+
+    <hr class="border border-solid border-gray-200 mt-8">
+
+    <section id="posts" class="content-container">
+  <div class="mb-10 text-center">
+    <h2>From Our Blog</h2>
+  </div>
+
+  <div class="flex flex-wrap justify-between">
+        <a class="posts-card" href="blog/amazon-influencer-increases-prime-day-commissions-by-9x-with-urlgenius-app-deep-links">
+          <img class="posts-card__img lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/1kGyPXDNcAuCzwo9bziEST/9cbad197d33c6fa8f9eddc5ac9fc97ec/tara-250x250-border.png" alt='Influencer Q&amp;A: Tara Thueson Increases Prime Day Commissions By 9x with App Deep Links' width="128" height="128" />
+
+          <div class="posts-card__text">
+            <div class="posts-card__title">Influencer Q&amp;A: Tara Thueson Increases Prime Day Commissions By 9x with App Deep Links</div>
+            <p class="posts-card__copy">
+              Tara Thueson increased commissions on Prime Day by 9x with app deep linking c...
+            </p>
+          </div>
+        </a>
+        <a class="posts-card" href="blog/amazon-influencer-prime-day-case-study-increasing-commissions-300-percent">
+          <img class="posts-card__img lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/6vWhAldgeR9Um6LOmGm2Fj/45dea3293f31ed357090966043e02ac6/border-karla-siegrist-the-frugal-sahm-urlgenius-case-study-250x250.png" alt='Influencer Q&amp;A:  How Karla at The Frugal Sahm Earned 300 Percent More Commissions on Amazon Prime Day' width="128" height="128" />
+
+          <div class="posts-card__text">
+            <div class="posts-card__title">Influencer Q&amp;A:  How Karla at The Frugal Sahm Earned 300 Percent More Commissions on Amazon Prime Day</div>
+            <p class="posts-card__copy">
+              Karla at The Frugal Sahm instinctively knew that in-app conversion would help...
+            </p>
+          </div>
+        </a>
+        <a class="posts-card" href="blog/amazon-influencer-increases-commissions-300-percent-with-app-deep-links">
+          <img class="posts-card__img lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/5XgbEBX7dbBcwe1VSYZcbv/0357e88b795ac80043cab814d3c13338/alaina-kirsch-250x250-border.png" alt='Influencer Q&amp;A: Alaina Kirsch Increases Amazon Commissions 200-300% with App Deep Links' width="128" height="128" />
+
+          <div class="posts-card__text">
+            <div class="posts-card__title">Influencer Q&amp;A: Alaina Kirsch Increases Amazon Commissions 200-300% with App Deep Links</div>
+            <p class="posts-card__copy">
+              Alaina realized that in-app conversion could help her earn more conversions b...
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/amazon-influncer-multiplies-commissions-400-percent-with-app-deep-linking">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/5DUXNDiwLuKDG2Fd2EMDDG/f5d1009faf0d1dbfaf7da2dce1d1fdda/savannah-kyle-250x250.png" alt='Influencer Q&amp;A: How Savannah Kay Designs Multiplied Commissions 300-400% With App Deep Links' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">Influencer Q&amp;A: How Savannah Kay Designs Multiplied Commissions 300-400% With App Deep Links</div>
+            <p class="post-card-hidden">
+              In this Amazon influencer Q&amp;A we learn how the team at Savannah Kay Designs started using URLgenius and how that lead to a dramatic increase in revenue. Their Amazon Associates reporting dashboard &quot;easily&quot; measured a 300-400% bump in commissions with URLgenius links compared to regular links!
+
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/amazon-influncer-doubles-commissions-with-app-deep-linking">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/5ek8iKO5I2Vjl1ChOUIleK/45236f841aa55828073eacae51908730/lucky-life-blog-2-250x250-border.png" alt='Influencer Q&amp;A: Lovely Lucky Life Instantly Doubles Commissions With App Deep Links' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">Influencer Q&amp;A: Lovely Lucky Life Instantly Doubles Commissions With App Deep Links</div>
+            <p class="post-card-hidden">
+              Amazon influencer Val at Lucky Life Blog quickly turned her skepticism into revenue when she instantly saw a huge increase in conversion and commissions with URLgenius links! Val is a power user of Instagram stories and as a mom, finding and sharing great products and deals on social media is a key to her success. Sending shoppers directly into the Amazon app and avoiding that mobile web login changed her business. Check out this Q&amp;A interview with Val herself!
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/amazon-influncers-increasing-commissions-300-percent-app-deep-linking">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/5CRLYwI7Hd67EmV5saNXO/9d5a9c37b77e1f21116e8438b39123a5/sweet-deal-canada-250x250-border.png" alt='Influencer Q&amp;A: Sweet Deal Canada Increases Amazon Commissions By 300% with App Deep Linking' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">Influencer Q&amp;A: Sweet Deal Canada Increases Amazon Commissions By 300% with App Deep Linking</div>
+            <p class="post-card-hidden">
+              Amazon influencer Sweet Deal Canada is seeing a sweet 300% increase in commissions using URLgenius links in their social media promotions! This influencer finds the best deals on Amazon Canada and shares them across social media channels. We sat down with Sweet Deal Canada to get their perspective on what it&#39;s like to be an influencer and how URLgenius is now a key part of their social media strategy for Amazon.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/the-best-alternative-for-firebase-dynamic-links">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/7LPj2yy5YwbyuCM6eH2UGB/bb7dbff0380f374766698a2ae35fb3d6/google-deprecating-firebase-dynamic-links-250x250-border.png" alt='It&#39;s Sunset for Google&#39;s Firebase Dynamic Links' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">It&#39;s Sunset for Google&#39;s Firebase Dynamic Links</div>
+            <p class="post-card-hidden">
+              Google is deprecating Firebase Dynamic Links presenting an opportunity for app marketers and development teams to take a fresh look at app deep linking requirements. A codeless approach lets your app marketing team unlock new app install growth and app engagement opportunities while lowering cost-per-install and the technical burden on your app development team.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/retail-enterprise-qr-code-generator-strategy-increases-product-engagment">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/3nk82YrtRpiTCWoOxgYFqD/8643a63a87f587a89630934b24709444/enterprise-qr-codes-retail-1-250x250-border.png" alt='International Cosmetics Leader Streamlines Product Information Distribution with Enterprise QR Code Strategy' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">International Cosmetics Leader Streamlines Product Information Distribution with Enterprise QR Code Strategy</div>
+            <p class="post-card-hidden">
+              Working with URLgenius, the marketing team implemented an enterprise QR code solution that addressed all their requirements. Key elements of the strategy included: enterprise level uptime, dynamic QR code routing, language geo-routing, branded QR code links, and more. 
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/rtl-play-increases-app-installs-300-percent-with-codeless-app-linking-strategy">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/37WQ2cAHS5ubRqFlLZ8OiF/0663799ae465ad749cc975ec3090abd8/rtl-play-250x250-border.png" alt='RTL Play Increases App Installs by 300% with Codeless App Linking Strategy' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">RTL Play Increases App Installs by 300% with Codeless App Linking Strategy</div>
+            <p class="post-card-hidden">
+              In this case study learn how the marketing team at RTL Play increased app installs by 300% with a codeless app linking and QR code strategy. Key elements of strategy included linking into specific in-app content from social media, on-air QR Codes that linked into the RTL app, and app links and QR codes designed to open the RTL app or go to the right app store all from a single campaign link.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/shophq-increases-in-app-revenue-with-on-air-qr-codes">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/5rqQkksJCYrObJMddEQlkn/59765caba51b8b426686e06b2acaf42c/shophq_logo-250x250-b.png" alt='ShopHQ Boosts In-App Revenue by 15% With On-Air QR Codes and New App Linking Strategy' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">ShopHQ Boosts In-App Revenue by 15% With On-Air QR Codes and New App Linking Strategy</div>
+            <p class="post-card-hidden">
+              In this case study, learn how ShopHQ gained advanced control over their QR codes for television and how they can now  measure the number of app installs and app-opens fron on-air display of the codes. The results of ShopHQ&#39;s new app linking and QR code engagement strategy became immediately clear as they saw an immediate increase in in-app engagement, app installs and revenue.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/fc-bayern-basketball-app-55-percent-conversion-app-install-banners">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/3fmEaUwnoJuoBhbE2UZKNM/cc7eaae82c3ea616a94c2c797a54348f/fc_bayern-basketball-250x250-border.png" alt='FC Bayern Basketball App Sees 55% Conversion Rate  From Codeless App Linking and App Install Banner Strategy' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">FC Bayern Basketball App Sees 55% Conversion Rate  From Codeless App Linking and App Install Banner Strategy</div>
+            <p class="post-card-hidden">
+              Learn how FC Bayern Basketball´s URLgenius app linking and app install banner implementation allowed the marketing team to exceed their goals for the mobile app’s launch including surpassing their app install targets. The URLgenius mobile app install banners also provided the team with important insights for optimization that would not be available with standard app install banner solutions.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/generate-qr-codes-open-mychart-app">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/3zysIBKqT3gvUSigFAjuRq/281755460500a853d47cd790b746e842/Screen_Shot_2023-05-25_at_3.40.26_PM.png" alt='How to Generate QR Codes to Open the MyChart App' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How to Generate QR Codes to Open the MyChart App</div>
+            <p class="post-card-hidden">
+              This post shows you step-by-step how to create a QR code for the MyChart app. The key to a successful QR code strategy for MyChart is related to how the QR code is generated and how much control your marketing team has over the code even after it&#39;s printed and in use. 
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/influencer-affiliate-facebook-group-link-open-amazon-app">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/1YoKBiA4nRqRL3MvaEuIUX/260bf1e664b181fded0c8b7dbc9ada54/how-to-link-to-amazon-from-facebook-groups-250x250-border.png" alt='How Influencers and Affiliates Can Generate Links to Open the Amazon App from a Facebook Group' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How Influencers and Affiliates Can Generate Links to Open the Amazon App from a Facebook Group</div>
+            <p class="post-card-hidden">
+              App deep linking to marketplace apps like Amazon is a great way to maximize your commissions but you can also use URLgenius links in other channels like SMS and email. This post shows you how to generate an app deep link or mobile app URL for Amazon or other marketplaces to share in your Facebook Group. Unlike regular marketplace links, the URLgenius link will open the app to help your shoppers immediately purchase and engage so you make more commissions!
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/how-direct-to-consumer-dtc-brands-can-generate-marketplace-app-links-to-measure-revenue-from-social-media">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/2E67KPnbdBFI0l0zVIPOPn/f6f664b6c9a523d32d1cd5ca2d7b592e/dtc-brands-generate-marketplace-app-links-to-promote-on-social-media-and-measure-results-250x250-border.png" alt='How DTC Brands Can Generate Marketplace App Links to Measure Sales from Social Media' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How DTC Brands Can Generate Marketplace App Links to Measure Sales from Social Media</div>
+            <p class="post-card-hidden">
+              This post shows direct-to-consumer or DTC brands how to generate a app links or app deeplinks to open any marketplace app that you can place in social media campaigns to grow and measure sales and remarketing opportunities from Facebook, Instagram, Twitter or any social app. 
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/dynamic-app-linking-marketplaces-amazon-walmart-target">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/sam72DqF2lopy06POzA3K/b835cc95ced04026e9d7151c96cdde6e/dynamic-app-deep-linking-250x250-border.png" alt='Ready for Takeoff: Dynamic App Linking into Marketplace Apps from Social Media' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">Ready for Takeoff: Dynamic App Linking into Marketplace Apps from Social Media</div>
+            <p class="post-card-hidden">
+              So, what is the opportunity cost of not updating your marketplace links with app deep linking? More than an inconvenience, money is being left on the table all around when your links don&#39;t open ecommerce apps like Amazon, Walmart and Target. This post tells you why there is no time to lose. Learn how to scale your apps links to open Amazon or any ecommerce app.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/how-publishers-can-generate-affiliate-links-that-open-ecommerce-apps">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/7Jjf8DhyzOrZdSeKVZujcE/322e788a48535cc56b6fb5b9ee739220/how-publishers-can-open-apps-from-websites-250x250-border.png" alt='How to Generate Affiliate Links That Open in E-Commerce Apps From a Website' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How to Generate Affiliate Links That Open in E-Commerce Apps From a Website</div>
+            <p class="post-card-hidden">
+              Are you an affiliate marketer looking for an innovative way to skyrocket your sales commission and overall conversion rates? When you generate an affiliate link with URLgenius, and upon being clicked, the desired e-commerce app will open to the right page!
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/generate-amazon-live-broadcast-app-deep-links-increase-commissions">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/rvWnKi7yGfEsJFJwuGvgw/fbf8c6fc1a75493d990ed17bcb2c2838/amazon-live-250x250b.png" alt='How Amazon Live Influencers Generate Links to Open the Amazon App from Social Media' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How Amazon Live Influencers Generate Links to Open the Amazon App from Social Media</div>
+            <p class="post-card-hidden">
+              Learn how to generate Amazon app deep links to Amazon Live broadcasts. Link out of Facebook (or any social app) more seamlessly and into the Amazon app to the right screen. No need for your shoppers to login to the Amazon website to watch the your Amazon Live stream, follow your channel, browse your shop, and ultimately buy your recommended products. All of which can help you earn more commissions 2-5x.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/how-to-customize-qr-code-designs-for-apps-and-websites">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/3MYkr5wtXUPn0vV10z8JXN/1414b2ff51160a8073b1bfebec28921d/qr-sephora-q2-promo-medium-rounded-pink-250x250-border.png" alt='How to Customize QR Codes for Apps and Websites Like a Pro in 2023' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How to Customize QR Codes for Apps and Websites Like a Pro in 2023</div>
+            <p class="post-card-hidden">
+              This post will teach you step-by-step how customize the design of a standard QR code and turn it into one that&#39;s catch the eye of your audience. You can change just about every design element of a QR code including colors, logo and even the shape of the elements within the code. Plus you&#39;ll learn how to change different elements while making sure your design is optimized for maximum scanning.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/generate-links-to-amazon-app-website-using-brand-domain">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/1WXvH5TcVjtd0vHsa2MFcS/f6580a9cdb8be24f019d291e6377fbdf/amazon-links-using-your-brands-domain-250x250-border.png" alt='How to Generate Amazon Mobile App URLs Using Your Brand&#39;s Domain to Open the App' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How to Generate Amazon Mobile App URLs Using Your Brand&#39;s Domain to Open the App</div>
+            <p class="post-card-hidden">
+              This post shows you step-by-step how Amazon sellers, affiliates, and influencers can generate Amazon app deep links with their brand&#39;s domain to open the Amazon app directly to store and product pages from any marketing channel. Your links to open into the Amazon app will also pass your Amazon Attribution or affiliate tags. This will increase your sales 2x-4x instantly! 
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/link-open-mobile-app-from-snapchat">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/I7oPCMSK4lHv8DlATj7YZ/443a85f6d3b1be6765be91f3c159e7b9/how-to-open-other-apps-from-snapchat.png" alt='How to Generate Links to Open Mobile Apps from Snapchat Ads and Stories' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How to Generate Links to Open Mobile Apps from Snapchat Ads and Stories</div>
+            <p class="post-card-hidden">
+              App marketers need to look no further than URLgenius for optimizing their Snapchat and other social media campaigns to increase app installs and app reengagement. When you use a URLgenius link to open your app from Snapchat, you give your customers a smooth &quot;app-to-app&quot; shopping journey that boosts both your brand and revenue! You can also measure your results with attribution tags.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/youtube-ad-link-open-mobile-app">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/5gNbCAwcqaOggZ0TGDDhSY/5ed6e06c9195f26e2aa53bb86955a2a8/youtube-qr-codes-260x260.png" alt='How to Generate Links to Open Mobile Apps from YouTube Ads and Videos' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How to Generate Links to Open Mobile Apps from YouTube Ads and Videos</div>
+            <p class="post-card-hidden">
+              This post shows you how to create links to open apps from YouTube ads, profiles and videos. With the URLgenius app deeplinking platform, marketers can generate links for YouTube ads to directly open their brand&#39;s mobile app to specific screens while measuring and attributing campaign results. URLgenius app-to-app linking technology increases app installs, app re-engagement, and revenue while letting you measure and attribute your campaign results.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/tiktok-ad-link-open-mobile-app">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/E5x7lp1AUo0KWTbYOCtbx/0f83adbc852decea97be2367949d3438/tiktok-logo-250x250.png" alt='How To Generate Links to Open Mobile Apps from TikTok Ads and Profiles' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How To Generate Links to Open Mobile Apps from TikTok Ads and Profiles</div>
+            <p class="post-card-hidden">
+              This post shows you how to link  to open your app from TikTok ads to increase app installs and app reeengament. You don&#39;t need SDKs or technical resources to link to your app from TikTok and other social apps but your marketing team needs to the right type of link and providing you with full control over the user experience when creating app links for social ads.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/generate-links-open-mobile-apps-instagram-advertising-stories-profiles">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/RC11JOIucfVvjee9fweco/a1c781261e5571931b69105f53094236/Instagram_logo-250x250-border.png" alt='How to Generate Mobile App Links for Instagram Ads, Stories, and Profiles That Directly Open Your App' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How to Generate Mobile App Links for Instagram Ads, Stories, and Profiles That Directly Open Your App</div>
+            <p class="post-card-hidden">
+              Learn how to link to open your app from Instagram profiles, stories and ads to increase app installs and app reeengament. You don&#39;t need SDKs or technical resources to link to your app from Instagram and other social apps but your marketing team needs to the right type of link and providing you with full control over the user experience when creating app links for social ads and other channels.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/generate-links-open-mobile-apps-facebook-advertising">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/656GNfILKoYWqe5nLTiQLv/7e6db8826b1e4d173bb1fd4abc041eff/facebook_logo_260x260.png" alt='How To Generate Links to Open Mobile Apps from Facebook Advertising' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How To Generate Links to Open Mobile Apps from Facebook Advertising</div>
+            <p class="post-card-hidden">
+              Learn how to increase app installs and app reengagement with Facebook advertising. You don&#39;t need SDKs or technical resources to link to your app from Facebook and other social apps but your marketing team should have full control over the user experience when creating app links for social ads and other channels.
+            </p>
+          </div>
+        </a>
+        <a class="post-card-hidden" href="blog/how-to-open-the-amazon-app-from-adwords-paid-search-advertising">
+          <img class="post-card-hidden lazy" src="assets/blog-image-placeholder-f46925027389ab3347fb27dd5a6af914cc9bc50d16af06b47d73504b7f3debc1.png" data-src="0gwlbcfnpdat/4On6Y4Iue4fG4iQPrvswsR/afe8ee87a3f908c721191d5be0feecad/google-ads-image-250x250-border.png" alt='How to Generate Amazon Mobile App URLs for PPC Campaigns to Open the App' width="128" height="128" />
+          <div class="post-card-hidden">
+            <div class="post-card-hidden">How to Generate Amazon Mobile App URLs for PPC Campaigns to Open the App</div>
+            <p class="post-card-hidden">
+              If you&#39;re setting a paid search campaign for Amazon you need an app deep link or miss out on measuring sales and engaement for remarketing. In other words, your campaign drives almost zero measurable benefit. That&#39;s why you&#39;re seeing clicks in the Amazon ads console but and no conversion but your overall sales are going up and the your campaign isn&#39;t getting credit. This post shows you how to fix it.
+            </p>
+          </div>
+        </a>
+  </div>
+
+  <div class="mt-10 text-center">
+    <a class="btn btn--squared btn--outline" href="blog">
+      Read More Insights
+</a>  </div>
+</section>
+
+    <section class="cta-section bg-blueGreen">
+  <div class="content-container my-0 py-16">
+    <div class='text-white text-3xl text-center'>
+      Any App, Any Channel, Any Browser
+    </div>
+    <div class='text-white text-center pt-2'>
+      Create your account now and start increasing conversion
+    </div>
+    <div class='text-center pt-12'>
+      <a href="signup">
+        <button href='signup' class='btn btn--white'>
+          Get Started for Free
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+  </div>
+</div>
+<script>
+// subheading animation section
+let shIndex = 0
+let shLength = document.getElementsByClassName("subheadings").length
+
+const plusSh = (n) => {
+  startSubHeadingSlide(shIndex += n)
+}
+
+const startSubHeadingSlide = (n) => {
+  let i
+  let subheadings = document.getElementsByClassName("subheadings")
+
+  if (n > subheadings.length) {shIndex = 1}
+  if (n < 1) {shIndex = subheadings.length}
+  for (i = 0; i < subheadings.length; i++) {
+    subheadings[i].style.display = "none"
+  }
+
+  subheadings[shIndex - 1].style.display = "block"
+  subheadings[shIndex - 1].className= "subheadings animate-subheading"
+}
+
+const setIntervalWithIterations = (callback, interval, iterations) => {
+  for (var i = 0; i < iterations; i++) {
+    if(i == 0){
+      setTimeout(callback, interval)
+    }
+    else{
+      setTimeout(callback, i * interval)
+    }
+  }
+}
+
+window.onload = function () {
+  setIntervalWithIterations(function() {
+    plusSh(1)
+  }, 6000, shLength + 1)
+}
+</script>
+<noscript>
+
+ <h2><a id="category=social">Popular Social Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=tiktok">TikTok</a></li>
+    <li><a href="#app=instagram">Instagram</a></li>
+    <li><a href="#app=facebook">Facebook</a></li>
+    <li><a href="#app=twitter">Twitter</a></li>
+    <li><a href="#app=snapchat">Snapchat</a></li>
+    <li><a href="#app=pinterest">Pinterest</a></li>
+    <li><a href="#app=linkedin">LinkedIn</a></li>
+    <li><a href="#app=telegram">Telegram</a></li>
+    <li><a href="#app=facebook_messenger">Facebook Messenger</a></li>
+    <li><a href="#app=whatsapp">WhatsApp</a></li>
+    <li><a href="#app=wechat">WeChat</a></li>
+    <li><a href="#app=weibo">Weibo</a></li>
+    <li><a href="#app=qq">QQ</a></li>
+  </ul>
+
+
+  <h3><a id="app=instagram">Instagram</a></h3>: Instagram on iOS and Android supports deep linking and QR codes for the following app page types:
+  <ul>
+    <li>Personal Profile Camera</li>
+    <li>Home</li>
+    <li>Profile</li>
+    <li>TV</li>
+    <li>Tag</li>
+    <li>To make a Instagram deep link or QR code use the URL scheme instagram://</li>
+  </ul>
+  <h3><a id="app=facebook">Facebook</a></h3>: Facebook on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Event</li>
+    <li>Group</li>
+    <li>Profile</li>
+    <li>Newswire</li>
+    <li>Page Profile</li>
+    <li>Company Event</li>
+    <li>Company Page Photos</li>
+    <li>Company Page</li>
+    <li>To make a Facebook deep link or QR code use the URL scheme fb://</li>
+  </ul>
+  <h3><a id="app=twitter">Twitter</a></h3>: Twitter on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Search</li>
+    <li>Profile</li>
+    <li>Hashtag</li>
+    <li>Share</li>
+    <li>Status</li>
+    <li>To make a Twitter deep link or QR code use the URL scheme twitter://</li>
+  </ul>
+  <h3><a id="app=snapchat">Snapchat</a></h3>: Snapchat on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To generate a Snapchat deep link or QR code use the URL scheme snapchat://</li>
+  </ul>
+  <h3><a id="app=tiktok">TikTok</a></h3>: TikTok on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Profile</li>
+    <li>Video</li>
+    <li>To generate a TikTok deep link or QR code use the URL scheme snssdk1233://</li>
+  </ul>
+  <h3><a id="app=pinterest">Pinterest</a></h3>: Pinterest on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Profile</li>
+    <li>To generate a Pinterest deep link or QR code use the URL scheme pinterest://</li>
+  </ul>
+  <h3><a id="app=linkedin">LinkedIn</a></h3>: LinkedIn on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Company</li>
+    <li>Profile</li>
+    <li>To generate a LinkedIn deep link or QR code use the URL scheme voyager://</li>
+  </ul>
+  <h3><a id="app=telegram">Telegram</a></h3>: Telegram on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>Join Chat</li>
+    <li>Messenger</li>
+    <li>To make a Telegram deep link or QR code use the URL scheme tg://</li>
+  </ul>
+  <h3><a id="app=facebook_messenger">Facebook Messenger</a></h3>: Facebook Messenger on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>m.me</li>
+    <li>Messenger</li>
+    <li>To make a Facebook Messenger deep link or QR code use the URL scheme fb-messenger-public://</li>
+  </ul>
+  <h3><a id="app=whatsapp">WhatsApp</a></h3>: WhatsApp on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a WhatsApp deep link or QR code use the URL scheme whatsapp://</li>
+  </ul>
+  <h3><a id="app=wechat">WeChat</a></h3>: WeChat on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a WeChat deep link or QR code use the URL scheme wechat://</li>
+  </ul>
+  <h3><a id="app=weibo">Weibo</a></h3>: Weibo on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Weibo deep link or QR code use the URL scheme weibo://</li>
+  </ul>
+  <h3><a id="app=qq">QQ</a></h3>: QQ on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a QQ deep link or QR code use the URL scheme mqq://</li>
+  </ul>
+
+  <h2><a id="category=shopping">Popular Shopping Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=amazon">Amazon</a></li>
+    <li><a href="#app=walmart">Walmart</a></li>
+    <li><a href="#app=target">Target</a></li>
+    <li><a href="#app=best_buy">Best Buy</a></li>
+    <li><a href="#app=ebay">Ebay</a></li>
+    <li><a href="#app=flipkart">Flipkart</a></li>
+    <li><a href="#app=home_depot">Home Depot</a></li>
+    <li><a href="#app=hsn">HSN</a></li>
+    <li><a href="#app=overstock">Overstock</a></li>
+    <li><a href="#app=kohls">Kohls</a></li>
+    <li><a href="#app=rei">REI</a></li>
+    <li><a href="#app=rent_the_runway">Rent The Runway</a></li>
+    <li><a href="#app=etsy">Etsy</a></li>
+    <li><a href="#app=aliexpress">Aliexpress</a></li>
+    <li><a href="#app=shoppiday">Shoppiday</a></li>
+    <li><a href="#app=taobao">Taobao</a></li>
+    <li><a href="#app=bonobos">Bonobos</a></li>
+    <li><a href="#app=bol">Bol</a></li>
+    <li><a href="#app=macy_s">Macy&#39;s</a></li>
+  </ul>
+
+
+  <h3><a id="app=amazon">Amazon</a></h3>: Amazon on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Category</li>
+    <li>Product</li>
+    <li>To make a Amazon deep link or QR code use the URL scheme com.amazon.mobile.shopping.web://</li>
+  </ul>
+  <h3><a id="app=walmart">Walmart</a></h3>: Walmart on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Search</li>
+    <li>Product</li>
+    <li>Home</li>
+    <li>To make a Walmart deep link or QR code use the URL scheme walmart://</li>
+  </ul>
+  <h3><a id="app=target">Target</a></h3>: Target on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>Product</li>
+    <li>Category</li>
+    <li>To make a Target deep link or QR code use the URL scheme target://</li>
+  </ul>
+  <h3><a id="app=best_buy">Best Buy</a></h3>: Best Buy on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Best Buy deep link or QR code use the URL scheme bestbuy://</li>
+  </ul>
+  <h3><a id="app=ebay">Ebay</a></h3>: Ebay on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Ebay deep link or QR code use the URL scheme ebay://</li>
+  </ul>
+  <h3><a id="app=flipkart">Flipkart</a></h3>: Flipkart on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Flipkart deep link or QR code use the URL scheme https://</li>
+  </ul>
+  <h3><a id="app=home_depot">Home Depot</a></h3>: Home Depot on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>Category</li>
+    <li>Product</li>
+    <li>To make a Home Depot deep link or QR code use the URL scheme homedepot://</li>
+  </ul>
+  <h3><a id="app=hsn">HSN</a></h3>: HSN on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>Product</li>
+    <li>Department</li>
+    <li>Category</li>
+    <li>To make a HSN deep link or QR code use the URL scheme hsnapp://</li>
+  </ul>
+  <h3><a id="app=overstock">Overstock</a></h3>: Overstock on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Sub Category</li>
+    <li>Product</li>
+    <li>Department</li>
+    <li>Category</li>
+    <li>Home</li>
+    <li>Flash Deals</li>
+    <li>To make a Overstock deep link or QR code use the URL scheme ostk://</li>
+  </ul>
+  <h3><a id="app=kohls">Kohls</a></h3>: Kohls on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Kohls deep link or QR code use the URL scheme kohlsapp://</li>
+  </ul>
+  <h3><a id="app=rei">REI</a></h3>: REI on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Brand</li>
+    <li>Product</li>
+    <li>Category</li>
+    <li>Home</li>
+    <li>To make a REI deep link or QR code use the URL scheme rei://</li>
+  </ul>
+  <h3><a id="app=rent_the_runway">Rent The Runway</a></h3>: Rent The Runway on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Rent The Runway deep link or QR code use the URL scheme rtr://</li>
+  </ul>
+  <h3><a id="app=etsy">Etsy</a></h3>: Etsy on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>Category</li>
+    <li>Listing</li>
+    <li>Shop</li>
+    <li>To make a Etsy deep link or QR code use the URL scheme etsy://</li>
+  </ul>
+  <h3><a id="app=aliexpress">Aliexpress</a></h3>: Aliexpress on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Aliexpress deep link or QR code use the URL scheme aliexpress://</li>
+  </ul>
+  <h3><a id="app=shoppiday">Shoppiday</a></h3>: Shoppiday on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Shoppiday deep link or QR code use the URL scheme shoppiday://</li>
+  </ul>
+  <h3><a id="app=taobao">Taobao</a></h3>: Taobao on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Taobao deep link or QR code use the URL scheme taobao://</li>
+  </ul>
+  <h3><a id="app=bonobos">Bonobos</a></h3>: Bonobos on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Bonobos deep link or QR code use the URL scheme bonobos://</li>
+  </ul>
+  <h3><a id="app=bol">Bol</a></h3>: Bol on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Bol deep link or QR code use the URL scheme bolcom://</li>
+  </ul>
+  <h3><a id="app=macy_s">Macy's</a></h3>: Macy's on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Macy's deep link or QR code use the URL scheme com.macys.mobile://</li>
+  </ul>
+
+  <h2><a id="category=music">Popular Music Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=apple_music">Apple Music</a></li>
+    <li><a href="#app=google_play_music">Google Play Music</a></li>
+    <li><a href="#app=amazon_music">Amazon Music</a></li>
+    <li><a href="#app=spotify">Spotify</a></li>
+    <li><a href="#app=pandora">Pandora</a></li>
+    <li><a href="#app=youtube_music">YouTube Music</a></li>
+    <li><a href="#app=iheartradio">iHeartRadio</a></li>
+    <li><a href="#app=soundcloud">SoundCloud</a></li>
+    <li><a href="#app=shazam">Shazam</a></li>
+    <li><a href="#app=mixcloud">Mixcloud</a></li>
+    <li><a href="#app=tidal_music_streaming">Tidal Music Streaming</a></li>
+    <li><a href="#app=viber">Viber</a></li>
+    <li><a href="#app=fizy">Fizy</a></li>
+    <li><a href="#app=deezer">Deezer</a></li>
+    <li><a href="#app=genius_song_lyrics_more">Genius: Song Lyrics &amp; More</a></li>
+    <li><a href="#app=axs_tickets">AXS Tickets</a></li>
+  </ul>
+
+
+  <h3><a id="app=apple_music">Apple Music</a></h3>: Apple Music on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Apple Music deep link or QR code use the URL scheme intent://</li>
+  </ul>
+  <h3><a id="app=google_play_music">Google Play Music</a></h3>: Google Play Music on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Google Play Music deep link or QR code use the URL scheme intent://</li>
+  </ul>
+  <h3><a id="app=amazon_music">Amazon Music</a></h3>: Amazon Music on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Amazon Music deep link or QR code use the URL scheme amznmp3://</li>
+  </ul>
+  <h3><a id="app=spotify">Spotify</a></h3>: Spotify on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Album</li>
+    <li>Show</li>
+    <li>Artist</li>
+    <li>Home</li>
+    <li>Episode</li>
+    <li>Playlist</li>
+    <li>Track</li>
+    <li>To make a Spotify deep link or QR code use the URL scheme spotify://</li>
+  </ul>
+  <h3><a id="app=pandora">Pandora</a></h3>: Pandora on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Pandora deep link or QR code use the URL scheme pandora://</li>
+  </ul>
+  <h3><a id="app=youtube_music">YouTube Music</a></h3>: YouTube Music on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a YouTube Music deep link or QR code use the URL scheme youtubemusic://</li>
+  </ul>
+  <h3><a id="app=iheartradio">iHeartRadio</a></h3>: iHeartRadio on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a iHeartRadio deep link or QR code use the URL scheme iheartradio://</li>
+  </ul>
+  <h3><a id="app=soundcloud">SoundCloud</a></h3>: SoundCloud on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a SoundCloud deep link or QR code use the URL scheme soundcloud://</li>
+  </ul>
+  <h3><a id="app=shazam">Shazam</a></h3>: Shazam on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Shazam deep link or QR code use the URL scheme shazam://</li>
+  </ul>
+  <h3><a id="app=mixcloud">Mixcloud</a></h3>: Mixcloud on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Mixcloud deep link or QR code use the URL scheme mc://</li>
+  </ul>
+  <h3><a id="app=tidal_music_streaming">Tidal Music Streaming</a></h3>: Tidal Music Streaming on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Tidal Music Streaming deep link or QR code use the URL scheme tidal://</li>
+  </ul>
+  <h3><a id="app=viber">Viber</a></h3>: Viber on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Viber deep link or QR code use the URL scheme viber://</li>
+  </ul>
+  <h3><a id="app=fizy">Fizy</a></h3>: Fizy on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Fizy deep link or QR code use the URL scheme fizy://</li>
+  </ul>
+  <h3><a id="app=deezer">Deezer</a></h3>: Deezer on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Deezer deep link or QR code use the URL scheme deezer://</li>
+  </ul>
+  <h3><a id="app=genius_song_lyrics_more">Genius: Song Lyrics & More</a></h3>: Genius: Song Lyrics & More on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Genius: Song Lyrics & More deep link or QR code use the URL scheme genius://</li>
+  </ul>
+  <h3><a id="app=axs_tickets">AXS Tickets</a></h3>: AXS Tickets on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a AXS Tickets deep link or QR code use the URL scheme axsmobile://</li>
+  </ul>
+
+  <h2><a id="category=entertainment">Popular Entertainment Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=youtube">Youtube</a></li>
+    <li><a href="#app=netflix">Netflix</a></li>
+    <li><a href="#app=hbo_go">HBO GO</a></li>
+    <li><a href="#app=abc_live">ABC Live</a></li>
+    <li><a href="#app=vimeo">Vimeo</a></li>
+    <li><a href="#app=hulu">Hulu</a></li>
+    <li><a href="#app=fandango">Fandango</a></li>
+    <li><a href="#app=nickelodeon">Nickelodeon</a></li>
+    <li><a href="#app=eonline">EOnline</a></li>
+    <li><a href="#app=redbox">Redbox</a></li>
+    <li><a href="#app=vevo">Vevo</a></li>
+    <li><a href="#app=eventbrite">Eventbrite</a></li>
+    <li><a href="#app=jibjab">JibJab</a></li>
+    <li><a href="#app=disney">Disney+</a></li>
+  </ul>
+
+
+  <h3><a id="app=youtube">Youtube</a></h3>: Youtube on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Video</li>
+    <li>Channel</li>
+    <li>Profile</li>
+    <li>To make a Youtube deep link or QR code use the URL scheme vnd.youtube://</li>
+  </ul>
+  <h3><a id="app=netflix">Netflix</a></h3>: Netflix on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Netflix deep link or QR code use the URL scheme nflx://</li>
+  </ul>
+  <h3><a id="app=hbo_go">HBO GO</a></h3>: HBO GO on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a HBO GO deep link or QR code use the URL scheme hbogo://</li>
+  </ul>
+  <h3><a id="app=abc_live">ABC Live</a></h3>: ABC Live on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+  </ul>
+  <h3><a id="app=vimeo">Vimeo</a></h3>: Vimeo on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Video</li>
+    <li>To make a Vimeo deep link or QR code use the URL scheme vimeo://</li>
+  </ul>
+  <h3><a id="app=hulu">Hulu</a></h3>: Hulu on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Hulu deep link or QR code use the URL scheme hulu://</li>
+  </ul>
+  <h3><a id="app=fandango">Fandango</a></h3>: Fandango on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>Home</li>
+    <li>To make a Fandango deep link or QR code use the URL scheme fandango://</li>
+  </ul>
+  <h3><a id="app=nickelodeon">Nickelodeon</a></h3>: Nickelodeon on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Nickelodeon deep link or QR code use the URL scheme nickapp://</li>
+  </ul>
+  <h3><a id="app=eonline">EOnline</a></h3>: EOnline on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a EOnline deep link or QR code use the URL scheme eonline://</li>
+  </ul>
+  <h3><a id="app=redbox">Redbox</a></h3>: Redbox on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Redbox deep link or QR code use the URL scheme rbapp://</li>
+  </ul>
+  <h3><a id="app=vevo">Vevo</a></h3>: Vevo on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Vevo deep link or QR code use the URL scheme vevo://</li>
+  </ul>
+  <h3><a id="app=eventbrite">Eventbrite</a></h3>: Eventbrite on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Eventbrite deep link or QR code use the URL scheme com-eventbrite-attendee://</li>
+  </ul>
+  <h3><a id="app=jibjab">JibJab</a></h3>: JibJab on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>Template</li>
+    <li>To make a JibJab deep link or QR code use the URL scheme com.jibjab.messages://</li>
+  </ul>
+  <h3><a id="app=disney">Disney+</a></h3>: Disney+ on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Movie</li>
+    <li>Series</li>
+    <li>Watchlist</li>
+    <li>Originals</li>
+    <li>To make a Disney+ deep link or QR code use the URL scheme disneyplus://</li>
+  </ul>
+  <h2><a id="category=business">Popular Business Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=google_docs">Google Docs</a></li>
+    <li><a href="#app=google_sheets">Google Sheets</a></li>
+    <li><a href="#app=excel">Excel</a></li>
+    <li><a href="#app=sharepoint">Sharepoint</a></li>
+    <li><a href="#app=slack">Slack</a></li>
+    <li><a href="#app=zoom_cloud_meetings">Zoom Cloud Meetings</a></li>
+    <li><a href="#app=cisco_webex">Cisco Webex</a></li>
+    <li><a href="#app=adp_mobile_solutions">ADP Mobile Solutions</a></li>
+    <li><a href="#app=workday">Workday</a></li>
+    <li><a href="#app=wrike">Wrike</a></li>
+    <li><a href="#app=behance">Behance</a></li>
+    <li><a href="#app=swych">Swych</a></li>
+    <li><a href="#app=blackberry_access">Blackberry Access</a></li>
+  </ul>
+
+
+  <h3><a id="app=google_docs">Google Docs</a></h3>: Google Docs on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Google Docs deep link or QR code use the URL scheme googledocs://</li>
+  </ul>
+  <h3><a id="app=google_sheets">Google Sheets</a></h3>: Google Sheets on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Google Sheets deep link or QR code use the URL scheme googlesheets://</li>
+  </ul>
+  <h3><a id="app=excel">Excel</a></h3>: Excel on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Excel deep link or QR code use the URL scheme ms-excel://</li>
+  </ul>
+  <h3><a id="app=sharepoint">Sharepoint</a></h3>: Sharepoint on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Sharepoint deep link or QR code use the URL scheme ms-sharepoint://</li>
+  </ul>
+  <h3><a id="app=slack">Slack</a></h3>: Slack on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Slack deep link or QR code use the URL scheme slack://</li>
+  </ul>
+  <h3><a id="app=zoom_cloud_meetings">Zoom Cloud Meetings</a></h3>: Zoom Cloud Meetings on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Zoom Cloud Meetings deep link or QR code use the URL scheme zoomus://</li>
+  </ul>
+  <h3><a id="app=cisco_webex">Cisco Webex</a></h3>: Cisco Webex on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Cisco Webex deep link or QR code use the URL scheme wbx://</li>
+  </ul>
+  <h3><a id="app=adp_mobile_solutions">ADP Mobile Solutions</a></h3>: ADP Mobile Solutions on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a ADP Mobile Solutions deep link or QR code use the URL scheme adpmobile://</li>
+  </ul>
+  <h3><a id="app=workday">Workday</a></h3>: Workday on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Workday deep link or QR code use the URL scheme workday+https://</li>
+  </ul>
+  <h3><a id="app=wrike">Wrike</a></h3>: Wrike on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Wrike deep link or QR code use the URL scheme wrikeapp://</li>
+  </ul>
+  <h3><a id="app=behance">Behance</a></h3>: Behance on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Project</li>
+    <li>Home</li>
+    <li>Profile</li>
+    <li>To make a Behance deep link or QR code use the URL scheme behance://</li>
+  </ul>
+  <h3><a id="app=swych">Swych</a></h3>: Swych on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Swych deep link or QR code use the URL scheme swych://</li>
+  </ul>
+  <h3><a id="app=blackberry_access">Blackberry Access</a></h3>: Blackberry Access on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Blackberry Access deep link or QR code use the URL scheme blackberry://</li>
+  </ul>
+  <h2><a id="category=food_drink">Popular Food &amp; Drink Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=yelp">Yelp</a></li>
+    <li><a href="#app=doordash">DoorDash</a></li>
+    <li><a href="#app=uber_eats">Uber Eats</a></li>
+    <li><a href="#app=grubhub">GrubHub</a></li>
+    <li><a href="#app=starbucks">Starbucks</a></li>
+    <li><a href="#app=blue_apron">Blue Apron</a></li>
+    <li><a href="#app=dominos">Dominos</a></li>
+    <li><a href="#app=pizza_hut">Pizza Hut</a></li>
+    <li><a href="#app=drizly">Drizly</a></li>
+    <li><a href="#app=postmates">Postmates</a></li>
+    <li><a href="#app=tasty">Tasty</a></li>
+    <li><a href="#app=chipotle">Chipotle</a></li>
+  </ul>
+
+
+  <h3><a id="app=yelp">Yelp</a></h3>: Yelp on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Review</li>
+    <li>Profile</li>
+    <li>To make a Yelp deep link or QR code use the URL scheme yelp://</li>
+  </ul>
+  <h3><a id="app=doordash">DoorDash</a></h3>: DoorDash on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a DoorDash deep link or QR code use the URL scheme doordash://</li>
+  </ul>
+  <h3><a id="app=uber_eats">Uber Eats</a></h3>: Uber Eats on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Uber Eats deep link or QR code use the URL scheme ubereats://</li>
+  </ul>
+  <h3><a id="app=grubhub">GrubHub</a></h3>: GrubHub on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a GrubHub deep link or QR code use the URL scheme grubhub://</li>
+  </ul>
+  <h3><a id="app=starbucks">Starbucks</a></h3>: Starbucks on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Starbucks deep link or QR code use the URL scheme starbucks://</li>
+  </ul>
+  <h3><a id="app=blue_apron">Blue Apron</a></h3>: Blue Apron on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Blue Apron deep link or QR code use the URL scheme blueapron://</li>
+  </ul>
+  <h3><a id="app=dominos">Dominos</a></h3>: Dominos on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Dominos deep link or QR code use the URL scheme dominospizza://</li>
+  </ul>
+  <h3><a id="app=pizza_hut">Pizza Hut</a></h3>: Pizza Hut on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Pizza Hut deep link or QR code use the URL scheme pizzahut://</li>
+  </ul>
+  <h3><a id="app=drizly">Drizly</a></h3>: Drizly on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>Home</li>
+    <li>To make a Drizly deep link or QR code use the URL scheme drizly://</li>
+  </ul>
+  <h3><a id="app=postmates">Postmates</a></h3>: Postmates on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Postmates deep link or QR code use the URL scheme postmates://</li>
+  </ul>
+  <h3><a id="app=tasty">Tasty</a></h3>: Tasty on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Tasty deep link or QR code use the URL scheme tasty://</li>
+  </ul>
+  <h3><a id="app=chipotle">Chipotle</a></h3>: Chipotle on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Chipotle deep link or QR code use the URL scheme cmg://</li>
+  </ul>
+  <h2><a id="category=travel">Popular Travel Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=google_places">Google Places</a></li>
+    <li><a href="#app=airbnb">Airbnb</a></li>
+    <li><a href="#app=tripadvisor">TripAdvisor</a></li>
+    <li><a href="#app=uber">Uber</a></li>
+    <li><a href="#app=lyft">Lyft</a></li>
+    <li><a href="#app=klook">Klook</a></li>
+    <li><a href="#app=united_airlines">United Airlines</a></li>
+    <li><a href="#app=marriott_bonvoy">Marriott Bonvoy</a></li>
+    <li><a href="#app=my_disney_experience">My Disney Experience</a></li>
+    <li><a href="#app=parkwhiz">ParkWhiz</a></li>
+    <li><a href="#app=spot_hero">Spot Hero</a></li>
+    <li><a href="#app=ford_pass">Ford Pass</a></li>
+    <li><a href="#app=new_york_subway_map">New York Subway Map</a></li>
+    <li><a href="#app=xo_by_jetsmarter">XO by JetSmarter</a></li>
+  </ul>
+
+
+  <h3><a id="app=google_places">Google Places</a></h3>: Google Places on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Places</li>
+    <li>To make a Google Places deep link or QR code use the URL scheme comgooglemapsurl://</li>
+  </ul>
+  <h3><a id="app=airbnb">Airbnb</a></h3>: Airbnb on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Airbnb deep link or QR code use the URL scheme airbnb://</li>
+  </ul>
+  <h3><a id="app=tripadvisor">TripAdvisor</a></h3>: TripAdvisor on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Hotel Review</li>
+    <li>Home</li>
+    <li>Restaurant Review</li>
+    <li>Hotel Review US</li>
+    <li>User Review</li>
+    <li>To make a TripAdvisor deep link or QR code use the URL scheme https://</li>
+  </ul>
+  <h3><a id="app=uber">Uber</a></h3>: Uber on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Uber deep link or QR code use the URL scheme uber://</li>
+  </ul>
+  <h3><a id="app=lyft">Lyft</a></h3>: Lyft on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Lyft deep link or QR code use the URL scheme lyft://</li>
+  </ul>
+  <h3><a id="app=klook">Klook</a></h3>: Klook on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Klook deep link or QR code use the URL scheme klook://</li>
+  </ul>
+  <h3><a id="app=united_airlines">United Airlines</a></h3>: United Airlines on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a United Airlines deep link or QR code use the URL scheme ualmobile://</li>
+  </ul>
+  <h3><a id="app=marriott_bonvoy">Marriott Bonvoy</a></h3>: Marriott Bonvoy on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Hotel Page</li>
+    <li>To make a Marriott Bonvoy deep link or QR code use the URL scheme intent://</li>
+  </ul>
+  <h3><a id="app=my_disney_experience">My Disney Experience</a></h3>: My Disney Experience on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a My Disney Experience deep link or QR code use the URL scheme mdx://</li>
+  </ul>
+  <h3><a id="app=parkwhiz">ParkWhiz</a></h3>: ParkWhiz on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a ParkWhiz deep link or QR code use the URL scheme parkwhiz://</li>
+  </ul>
+  <h3><a id="app=spot_hero">Spot Hero</a></h3>: Spot Hero on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Spot Hero deep link or QR code use the URL scheme spothero://</li>
+  </ul>
+  <h3><a id="app=ford_pass">Ford Pass</a></h3>: Ford Pass on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Ford Pass deep link or QR code use the URL scheme fordapp://</li>
+  </ul>
+  <h3><a id="app=new_york_subway_map">New York Subway Map</a></h3>: New York Subway Map on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a New York Subway Map deep link or QR code use the URL scheme tagmanager.c.uk.co.mxdata.NewYorkSubwayMap://</li>
+  </ul>
+  <h3><a id="app=xo_by_jetsmarter">XO by JetSmarter</a></h3>: XO by JetSmarter on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a XO by JetSmarter deep link or QR code use the URL scheme jetsmarter://</li>
+  </ul>
+  <h2><a id="category=utilities">Popular Utilities Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=my_at_t">My AT&amp;T</a></li>
+    <li><a href="#app=my_verizon">My Verizon</a></li>
+    <li><a href="#app=t_mobile">T-Mobile</a></li>
+    <li><a href="#app=my_sprint">My Sprint</a></li>
+    <li><a href="#app=my_consumer_cellular">My Consumer Cellular</a></li>
+  </ul>
+
+
+  <h3><a id="app=my_at_t">My AT&T</a></h3>: My AT&T on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a My AT&T deep link or QR code use the URL scheme com.att.myatt://</li>
+  </ul>
+  <h3><a id="app=my_verizon">My Verizon</a></h3>: My Verizon on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a My Verizon deep link or QR code use the URL scheme mvm://</li>
+  </ul>
+  <h3><a id="app=t_mobile">T-Mobile</a></h3>: T-Mobile on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a T-Mobile deep link or QR code use the URL scheme tmoapp://</li>
+  </ul>
+  <h3><a id="app=my_sprint">My Sprint</a></h3>: My Sprint on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a My Sprint deep link or QR code use the URL scheme mysprint://</li>
+  </ul>
+  <h3><a id="app=my_consumer_cellular">My Consumer Cellular</a></h3>: My Consumer Cellular on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a My Consumer Cellular deep link or QR code use the URL scheme mycc://</li>
+  </ul>
+  <h2><a id="category=news">Popular News Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=usa_today">USA Today</a></li>
+    <li><a href="#app=ny_times">NY Times</a></li>
+    <li><a href="#app=wall_street_journal">Wall Street Journal</a></li>
+    <li><a href="#app=washington_post">Washington Post</a></li>
+    <li><a href="#app=npr">NPR</a></li>
+    <li><a href="#app=nat_geo">Nat Geo</a></li>
+    <li><a href="#app=bbc_news">BBC News</a></li>
+    <li><a href="#app=cnbc">CNBC</a></li>
+    <li><a href="#app=time">Time</a></li>
+    <li><a href="#app=sports_illustrated">Sports Illustrated</a></li>
+    <li><a href="#app=new_yorker_magazine">New Yorker Magazine</a></li>
+    <li><a href="#app=reddit">Reddit</a></li>
+  </ul>
+
+
+  <h3><a id="app=usa_today">USA Today</a></h3>: USA Today on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a USA Today deep link or QR code use the URL scheme usatoday://</li>
+  </ul>
+  <h3><a id="app=ny_times">NY Times</a></h3>: NY Times on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a NY Times deep link or QR code use the URL scheme nytimes://</li>
+  </ul>
+  <h3><a id="app=wall_street_journal">Wall Street Journal</a></h3>: Wall Street Journal on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Wall Street Journal deep link or QR code use the URL scheme wsj://</li>
+  </ul>
+  <h3><a id="app=washington_post">Washington Post</a></h3>: Washington Post on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>All</li>
+    <li>To make a Washington Post deep link or QR code use the URL scheme washpost://</li>
+  </ul>
+  <h3><a id="app=npr">NPR</a></h3>: NPR on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a NPR deep link or QR code use the URL scheme nprnews://</li>
+  </ul>
+  <h3><a id="app=nat_geo">Nat Geo</a></h3>: Nat Geo on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Nat Geo deep link or QR code use the URL scheme natgeo://</li>
+  </ul>
+  <h3><a id="app=bbc_news">BBC News</a></h3>: BBC News on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>All</li>
+    <li>To make a BBC News deep link or QR code use the URL scheme intent://</li>
+  </ul>
+  <h3><a id="app=cnbc">CNBC</a></h3>: CNBC on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>All</li>
+    <li>To make a CNBC deep link or QR code use the URL scheme cnbctrending://</li>
+  </ul>
+  <h3><a id="app=time">Time</a></h3>: Time on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Time deep link or QR code use the URL scheme timeus://</li>
+  </ul>
+  <h3><a id="app=sports_illustrated">Sports Illustrated</a></h3>: Sports Illustrated on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Sports Illustrated deep link or QR code use the URL scheme bdh://</li>
+  </ul>
+  <h3><a id="app=new_yorker_magazine">New Yorker Magazine</a></h3>: New Yorker Magazine on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a New Yorker Magazine deep link or QR code use the URL scheme com.condenet.newyorker://</li>
+  </ul>
+  <h3><a id="app=reddit">Reddit</a></h3>: Reddit on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>All</li>
+    <li>To make a Reddit deep link or QR code use the URL scheme intent://</li>
+  </ul>
+  <h2><a id="category=finance">Popular Finance Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=american_express">American Express</a></li>
+    <li><a href="#app=bank_of_america">Bank of America</a></li>
+    <li><a href="#app=capital_one">Capital One</a></li>
+    <li><a href="#app=credit_karma">Credit Karma</a></li>
+    <li><a href="#app=discover_mobile">Discover Mobile</a></li>
+    <li><a href="#app=wells_fargo">Wells Fargo</a></li>
+    <li><a href="#app=venmo">Venmo</a></li>
+    <li><a href="#app=square">Square</a></li>
+    <li><a href="#app=paypal">Paypal</a></li>
+    <li><a href="#app=cash_app">Cash App</a></li>
+  </ul>
+
+
+  <h3><a id="app=american_express">American Express</a></h3>: American Express on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a American Express deep link or QR code use the URL scheme amexapp://</li>
+  </ul>
+  <h3><a id="app=bank_of_america">Bank of America</a></h3>: Bank of America on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Bank of America deep link or QR code use the URL scheme bofa://</li>
+  </ul>
+  <h3><a id="app=capital_one">Capital One</a></h3>: Capital One on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Capital One deep link or QR code use the URL scheme capitalone://</li>
+  </ul>
+  <h3><a id="app=credit_karma">Credit Karma</a></h3>: Credit Karma on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Credit Karma deep link or QR code use the URL scheme creditkarma://</li>
+  </ul>
+  <h3><a id="app=discover_mobile">Discover Mobile</a></h3>: Discover Mobile on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Discover Mobile deep link or QR code use the URL scheme discovermobile://</li>
+  </ul>
+  <h3><a id="app=wells_fargo">Wells Fargo</a></h3>: Wells Fargo on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Wells Fargo deep link or QR code use the URL scheme intent://</li>
+  </ul>
+  <h3><a id="app=venmo">Venmo</a></h3>: Venmo on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>User</li>
+    <li>To make a Venmo deep link or QR code use the URL scheme intent://</li>
+  </ul>
+  <h3><a id="app=square">Square</a></h3>: Square on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a Square deep link or QR code use the URL scheme square-register://</li>
+  </ul>
+  <h3><a id="app=paypal">PayPal</a></h3>: PayPal on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To make a PayPal deep link or QR code use the URL scheme paypal://</li>
+  </ul>
+  <h3><a id="app=cash_app">Cash App</a></h3>: Cash App on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Cash App deep link or QR code use the URL scheme cash.app://</li>
+  </ul>
+  <h2><a id="category=medical">Popular Medical Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=mychart">MyChart</a></li>
+    <li><a href="#app=anthem_anywhere">Anthem Anywhere</a></li>
+    <li><a href="#app=doctor_on_demand">Doctor On Demand</a></li>
+    <li><a href="#app=mayo_clinic">Mayo Clinic</a></li>
+    <li><a href="#app=good_rx">Good RX</a></li>
+    <li><a href="#app=flo_period">Flo Period</a></li>
+    <li><a href="#app=pregnancy_plus">Pregnancy Plus</a></li>
+  </ul>
+
+
+  <h3><a id="app=mychart">MyChart</a></h3>: MyChart on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>To create a MyChart deep link or QR code use the URL scheme epicmychart://</li>
+  </ul>
+  <h3><a id="app=anthem_anywhere">Anthem Anywhere</a></h3>: Anthem Anywhere on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Anthem Anywhere deep link or QR code use the URL scheme intent://</li>
+  </ul>
+  <h3><a id="app=doctor_on_demand">Doctor On Demand</a></h3>: Doctor On Demand on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Doctor On Demand deep link or QR code use the URL scheme doctorondemand://</li>
+  </ul>
+  <h3><a id="app=mayo_clinic">Mayo Clinic</a></h3>: Mayo Clinic on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Mayo Clinic deep link or QR code use the URL scheme intent://</li>
+  </ul>
+  <h3><a id="app=good_rx">Good RX</a></h3>: Good RX on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Good RX deep link or QR code use the URL scheme goodrx://</li>
+  </ul>
+  <h3><a id="app=flo_period">Flo Period</a></h3>: Flo Period on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Flo Period deep link or QR code use the URL scheme flo://</li>
+  </ul>
+  <h3><a id="app=pregnancy_plus">Pregnancy Plus</a></h3>: Pregnancy Plus on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Pregnancy Plus deep link or QR code use the URL scheme pregplus://</li>
+  </ul>
+  <h2><a id="category=lifestyle">Popular Lifestyle Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=amazon_alexa">Amazon Alexa</a></li>
+    <li><a href="#app=nest">Nest</a></li>
+    <li><a href="#app=ecobee">Ecobee</a></li>
+    <li><a href="#app=home_advisor">Home Advisor</a></li>
+    <li><a href="#app=angie_s_list">Angie&#39;s List</a></li>
+    <li><a href="#app=houzz">Houzz</a></li>
+    <li><a href="#app=zillow">Zillow</a></li>
+    <li><a href="#app=trulia">Trulia</a></li>
+    <li><a href="#app=apartments_com">Apartments.com</a></li>
+    <li><a href="#app=abodo">Abodo</a></li>
+  </ul>
+
+
+  <h3><a id="app=amazon_alexa">Amazon Alexa</a></h3>: Amazon Alexa on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Amazon Alexa deep link or QR code use the URL scheme alexa://</li>
+  </ul>
+  <h3><a id="app=nest">Nest</a></h3>: Nest on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Nest deep link or QR code use the URL scheme nestmobile://</li>
+  </ul>
+  <h3><a id="app=ecobee">Ecobee</a></h3>: Ecobee on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Ecobee deep link or QR code use the URL scheme ecobee://</li>
+  </ul>
+  <h3><a id="app=home_advisor">Home Advisor</a></h3>: Home Advisor on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Home Advisor deep link or QR code use the URL scheme homeadvisor://</li>
+  </ul>
+  <h3><a id="app=angie_s_list">Angie's List</a></h3>: Angie's List on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Angie's List deep link or QR code use the URL scheme angieslist://</li>
+  </ul>
+  <h3><a id="app=houzz">Houzz</a></h3>: Houzz on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+  </ul>
+  <h3><a id="app=zillow">Zillow</a></h3>: Zillow on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>All</li>
+    <li>To create a Zillow deep link or QR code use the URL scheme intent://</li>
+  </ul>
+  <h3><a id="app=trulia">Trulia</a></h3>: Trulia on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Trulia deep link or QR code use the URL scheme trulia://</li>
+  </ul>
+  <h3><a id="app=apartments_com">Apartments.com</a></h3>: Apartments.com on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Apartments.com deep link or QR code use the URL scheme com.apartments.www://</li>
+  </ul>
+  <h3><a id="app=abodo">Abodo</a></h3>: Abodo on iOS and Android supports deep links and QR codes for the following app page types:
+  <ul>
+    <li>Home</li>
+    <li>To create a Abodo deep links or QR code use the URL scheme abodo://</li>
+  </ul>
+  <h2><a id="category=books_reference">Popular Books &amp; Reference Apps to Deep Link Into and Make QR Codes For</a></h2>
+  <ul>
+    <li><a href="#app=hooked">HOOKED</a></li>
+    <li><a href="#app=nook">Nook</a></li>
+    <li><a href="#app=goodreads">Goodreads</a></li>
+    <li><a href="#app=google_translate">Google Translate</a></li>
+    <li><a href="#app=urban_dictionary">Urban Dictionary</a></li>
+    <li><a href="#app=bible">Bible</a></li>
+    <li><a href="#app=olive_tree_bible">Olive Tree Bible</a></li>
+  </ul>
+<h3><a id="app=hooked">HOOKED</a></h3>: HOOKED on iOS and Android supports deep linking into the following app page types:
+<ul>
+<li>Home</li>
+<li>To create a HOOKED deep link use the URL scheme hooked://</li>
+</ul>
+<h3><a id="nook">Nook</a></h3>: Nook on iOS and Android supports deep links and QR codes for the following app page types:
+<ul>
+<li>Home</li>
+<li>To make a Nook deep link or QR code use the URL scheme nook://</li>
+</ul>
+<h3><a id="goodreads">Goodreads</a></h3>: Goodreads on iOS and Android supports deep links and QR codes for the following app page types:
+<ul>
+<li>Profile</li>
+<li>To make a Goodreads deep link or QR code use the URL scheme com.goodreads://</li>
+</ul>
+<h3><a id="google_translate">Google Translate</a></h3>: Google Translate on iOS and Android supports deep links and QR codes for the following app page types:
+<ul>
+<li>Home</li>
+<li>To make a Google Translate deep link or QR code use the URL scheme googletranslate://</li>
+</ul>
+<h3><a id="urban_dictionary">Urban Dictionary</a></h3>: Urban Dictionary on iOS and Android supports deep links and QR codes for the following app page types:
+<ul>
+<li>Home</li>
+<li>To make an Urban Dictionary deep link or QR code use the URL scheme com.urbandictionary.iphone://</li>
+</ul>
+<h3><a id="bible">Bible</a></h3>: Bible on iOS and Android supports deep links and QR codes for the following app page types:
+<ul>
+<li>Home</li>
+<li>To make a Bible deep link or QR code use the URL scheme youversion://</li>
+</ul>
+<h3><a id="olive_tree_bible">Olive Tree Bible</a></h3>: Olive Tree Bible on iOS and Android supports deep links and QR codes for the following app page types:
+<ul>
+<li>Home</li>
+<li>To make an Olive Tree Bible deep link or QR code use the URL scheme biblereader://</li>
+</ul>
+
+<ul>
+<li>Thank you for a great product! URLgenius makes my work SO much easier and more productive. </li>
+<li>- Social Media Manager</li>
+</ul>
+<ul>
+<li>I love URLgenius! It makes it SO much easier for my FOLLOWERS to become SUBSCRIBERS!</li>
+<li>- YouTube Marketer</li>
+</ul>
+<ul>
+<li>I get subscribers, likes and comments faster. I recommend URLgenius to all my friends!</li>
+<li>- YouTube Marketer</li>
+</ul>
+<ul>
+<li>You can use URLgenius to create deep links into Facebook profiles, groups, reviews, events, and more...</li>
+<li>- Social Marketing Strategist</li>
+</ul>
+<ul>
+<li>You can use URLgenius to create deep links into Instagram profiles, pictures, hashtags, IGTV, and more…</li>
+<li>- Social Marketing Strategist</li>
+</ul>
+<ul>
+<li>You can use URLgenius to create deep links into YouTube profiles, channels, videos, and more…</li>
+<li>- Social Marketing Strategist</li>
+</ul>
+<ul>
+<li>URLgenius: you've been such a big help to me and other people too! Keep up the good work!</li>
+<li>- YouTube Marketer</li>
+</ul>
+<ul>
+<li>It opens in the Canva app!!! OMG!! This is so amazing!! I'm a customer for life! Thank you!!</li>
+<li>- Designer, Social Media Consultant</li>
+</ul>
+<ul>
+<li>URLgenius exceeded our expectations, delivering between 250% - 450% increased conversion. The platform is now a key part of our strategy. </li>
+<li>- Paid Social Director, Global Brand</li>
+</ul>
+<ul>
+<li>I needed a clean way of deep linking my Facebook group to my clients from inside Manychat. URLgenius worked beautifully! </li>
+<li>- Facebook Marketer, Manychat User</li>
+</ul>
+<ul>
+<li>URLgenius has helped 2x our Amazon conversion - it makes the customer journey easier, and provides experiences that produce more sales. </li>
+<li>- Amazon Marketer, Agency CEO </li>
+</ul>
+<ul>
+<li>You can use URLgenius to create deep links into Messenger, Telegram profiles; Snapchat profiles, and more…</li>
+<li>- Social Marketing Strategist</li>
+</ul>
+<ul>
+<li>It's so GREAT being able to link directly to Instagram accounts - without the weird in-app browser experience!</li>
+<li>- Social Media Director, Cosmetics Brand</li>
+</ul>
+<ul>
+<li>Gotta say, URLgenius: your team honestly has some of the BEST customer service ever!</li>
+<li>- Software Engineer, Social Marketer </li>
+</ul>
+<ul>
+<li>URLgenius helped us gain 16% more YouTube subscribers on a monthly basis - delivering MORE streams and engagement for our Artists.</li>
+<li>- Record Label, Social Marketer </li>
+</ul>
+<ul>
+<li>Our digital team is very pleased with URLgenius and the KPIs obtained - including 35% higher follower conversion rates on large scale campaigns. </li>
+<li>- Social Media Director, Fashion Brand </li>
+</ul>
+<ul>
+<li>We love URLgenius and have rolled out the platform as a permanent part of our email marketing strategy.</li>
+<li>- Email Marketer</li>
+</ul>
+<ul>
+<li>Social pro tip: Use URLgenius to create links that open the native app on a user's device ... NOT in a mobile browser logged out! </li>
+<li>- Social Marketing Strategist</li>
+</ul>
+<ul>
+<li>The URLgenius platform is amazing - I'm a customer for life! Thank you so much!!</li>
+<li>- Graphic Designer</li>
+</ul>
+<ul>
+<li>We deployed URLgenius links in our email campaign and results were immediate - thousands more Snapchat followers in our first use! </li>
+<li>- Email Marketer, Snapchat Marketer</li>
+</ul>
+<ul>
+<li>I’m extremely happy with my URLgenius results! My conversion rate has gone from 40% to 65% when linking from Instagram into Spotify. </li>
+<li>- Musician, Social Media Marketer </li>
+</ul>
+<ul>
+<li>URLgenius lets us deeplink users from social media into our app - resulting in more opportunities for purchases, retention, and engagement.</li>
+<li>- App Marketer, Social Media Director</li>
+</ul>
+<ul>
+<li>Without URLgenius, we'd have to detect a user's OS, prepend intent schemes, and handle situations where the Amazon app isn't installed.</li>
+<li>- App Developer, Amazon Marketer</li>
+</ul>
+<ul>
+<li>After only two days, I'm MORE than convinced on the value of URLgenius. Thank you!</li>
+<li>- Content Creator, YouTube Marketer</li>
+</ul>
+<ul>
+<li>As a bot builder, if I want to send someone into an app, I use URLgenius. It's so easy ... I don't have to do anything. It's kind of ridiculous!</li>
+<li>- Chatbot Marketer, Strategist </li>
+</ul>
+
+</noscript>
+
+
+
+    </div>
+
+    <footer class='footer'>
+  <div class="footer__content">
+    <div class="footer__logo">
+      <img
+        src="assets/urlg-logo-mark-only-white-c42c6828a8785e83a75c4dcec3d58ee6959f324cb762abbd990b18c37f39aa9e.svg"
+        alt="Mobile App Deep Linking for Omnichannel Marketers"
+        width="32"
+        height="32"
+      >
+    </div>
+
+    <div class="footer__links">
+      <div class="footer__link">
+        <p>Solutions</p>
+        <ul>
+          <li><a href="app-linking">App Linking</a></li>
+          <li><a href="deferred-deep-linking">Deferred Deep Linking</a></li>
+          <li><a href="qr-codes">QR Codes</a></li>
+          <li><a href="marketplace-sellers">Marketplace Sellers</a></li>
+          <li><a href="influencers-affiliates">Influencers &amp; Affiliates</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__link">
+        <p>Resources</p>
+        <ul>
+          <li><a href="api">Developer API</a></li>
+          <li><a href="blog">Blog</a></li>
+          <li><a href="faq">FAQs</a></li>
+          <li><a href="deeplink-tester">Deeplink Tester</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__link">
+        <p>Company</p>
+        <ul>
+          <li><a href="privacy">Privacy</a></li>
+          <li><a href="pricing">Pricing</a></li>
+          <li><a href="mailto:info@urlgeni.us">Contact</a></li>
+          <li><a href="terms-of-service">Terms Of Service</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__note">
+    Copyright 2023 Pure Oxygen Labs. All rights reserved
+  </div>
+</footer>
+
+    
+  <!-- Drip -->
+  <script type="text/javascript">
+    var _dcq = _dcq || [];
+    var _dcs = _dcs || {}; 
+    _dcs.account = '7394692';
+    
+    (function() {
+      var dc = document.createElement('script');
+      dc.type = 'text/javascript'; dc.async = true; 
+      dc.src = '//tag.getdrip.com/7394692.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(dc, s);
+    })();
+  </script>
+
+
+    <div>
+      <div id="app"></div>
+    </div>
+
+    <script async type="module" crossorigin="anonymous" src="ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script async nomodule="" crossorigin="anonymous" src="ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+
+    <script src="packs/js/application-b828ec8e0de7d10f1ef9.js"></script>
+
+    <footer>
+      
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script defer src="https://www.googletagmanager.com/gtag/js?id=UA-145424481-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', 'UA-145424481-1');
+        </script>
+    </footer>
+  </body>
+</html>
